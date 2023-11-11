@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<organization:Organization xmlns:organization="http://documentation.bonitasoft.com/organization-xml-schema/1.1" name="WeDoAgency">
+  <customUserInfoDefinitions/>
+  <users>
+    <user userName="User1">
+      <manager></manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+  </users>
+  <roles>
+    <role name="serviceManager">
+      <displayName>Service Manager</displayName>
+      <description>handle registration requests, create service offers and manage contracts</description>
+    </role>
+    <role name="attorney">
+      <displayName>Attorney</displayName>
+      <description>law codification , reviewing legal ducuments, ensuring legal compilance</description>
+    </role>
+    <role name="supervisor">
+      <displayName>Supervisor</displayName>
+      <description>oversee processes, hhandle exceptions(deplays in codification) and manage cotract termination</description>
+    </role>
+    <role name="primeLeader">
+      <displayName>Prime Leader</displayName>
+      <description>Approve final documents, contracts or new law versions</description>
+    </role>
+    <role name="reviewer">
+      <displayName>Reviewer</displayName>
+      <description>Evaluate and respond to service offers,contracts, law codification</description>
+    </role>
+    <role name="administrativeOfficer">
+      <displayName>Administrative Officer</displayName>
+      <description>Start processes like registration, law submission and other administration related jobs</description>
+    </role>
+  </roles>
+  <groups>
+    <group name="goverment">
+      <displayName>Goverment</displayName>
+    </group>
+    <group name="agency">
+      <displayName>Agency</displayName>
+    </group>
+  </groups>
+  <memberships>
+    <membership>
+      <userName>User1</userName>
+      <roleName>serviceManager</roleName>
+      <groupName>goverment</groupName>
+    </membership>
+  </memberships>
+</organization:Organization>
