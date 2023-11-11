@@ -9,5 +9,107 @@
             <queries/>
             <indexes/>
         </businessObject>
+        <businessObject qualifiedName="com.upp.model.Datoteka">
+            <fields>
+                <field type="TEXT" length="255" name="naziv" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.upp.model.Komentar">
+            <fields>
+                <field type="TEXT" length="1024" name="tekst" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.upp.model.OdgovorZakon">
+            <fields>
+                <field type="STRING" length="255" name="attribute" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.upp.model.PitanjeZakon">
+            <fields>
+                <field type="STRING" length="255" name="tekst" nullable="true" collection="false"/>
+                <relationField type="COMPOSITION" reference="com.upp.model.OdgovorZakon" fetchType="LAZY" name="odgovori" nullable="true" collection="true"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.upp.model.Ponuda">
+            <fields>
+                <relationField type="COMPOSITION" reference="com.upp.model.StavkaPonude" fetchType="EAGER" name="stavke" nullable="true" collection="true"/>
+                <relationField type="AGGREGATION" reference="com.upp.model.Vlada" fetchType="LAZY" name="vlada" nullable="false" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.upp.model.StavkaPonude">
+            <fields>
+                <field type="DOUBLE" length="255" name="mjesecnaCena" nullable="false" collection="false"/>
+                <field type="DOUBLE" length="255" name="godisnjaCena" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="naziv" nullable="false" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.upp.model.StavkaUgovora">
+            <fields>
+                <field type="DOUBLE" length="255" name="godisnjaCena" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="naziv" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.upp.model.Ugovor">
+            <fields>
+                <relationField type="COMPOSITION" reference="com.upp.model.StavkaUgovora" fetchType="EAGER" name="stavkeUgovora" nullable="true" collection="true"/>
+                <field type="DOUBLE" length="255" name="ukupnaCena" nullable="true" collection="false"/>
+                <relationField type="AGGREGATION" reference="com.upp.model.Vlada" fetchType="LAZY" name="vlada" nullable="false" collection="false"/>
+                <field type="BOOLEAN" length="255" name="potpisVlade" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="potpisAencija" nullable="true" collection="false"/>
+                <relationField type="COMPOSITION" reference="com.upp.model.Komentar" fetchType="LAZY" name="komentari" nullable="true" collection="true"/>
+                <field type="BOOLEAN" length="255" name="jelPlaceno" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.upp.model.Vlada">
+            <fields>
+                <field type="STRING" length="255" name="nazivUprave" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="nivoUprave" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="mesto" nullable="false" collection="false"/>
+                <field type="INTEGER" length="255" name="postanskiBroj" nullable="false" collection="false"/>
+                <field type="INTEGER" length="255" name="brojLjudiKojiKoristeSoftver" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="email" nullable="false" collection="false"/>
+                <field type="BOOLEAN" length="255" name="daLiZelipregledZakonaPrijeObjavljivanja" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="korisnickoIme" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="sifra" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.upp.model.Zakon">
+            <fields>
+                <relationField type="COMPOSITION" reference="com.upp.model.Datoteka" fetchType="LAZY" name="datoteke" nullable="true" collection="true"/>
+                <relationField type="AGGREGATION" reference="com.upp.model.Vlada" fetchType="LAZY" name="vlada" nullable="false" collection="false"/>
+                <relationField type="COMPOSITION" reference="com.upp.model.PitanjeZakon" fetchType="LAZY" name="pitanja" nullable="true" collection="true"/>
+                <field type="STRING" length="255" name="status" nullable="false" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
     </businessObjects>
 </businessObjectModel>
