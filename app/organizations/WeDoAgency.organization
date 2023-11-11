@@ -2,38 +2,22 @@
 <organization:Organization xmlns:organization="http://documentation.bonitasoft.com/organization-xml-schema/1.1" name="WeDoAgency">
   <customUserInfoDefinitions/>
   <users>
-    <user userName="User1">
+    <user userName="Ivana Lazarevic">
+      <firstName>Iva</firstName>
+      <lastName>Lazarevic</lastName>
       <manager></manager>
       <personalData/>
-      <professionalData/>
+      <professionalData>
+        <email>iva@email.com</email>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues/>
     </user>
   </users>
   <roles>
-    <role name="serviceManager">
-      <displayName>Service Manager</displayName>
-      <description>handle registration requests, create service offers and manage contracts</description>
-    </role>
-    <role name="attorney">
-      <displayName>Attorney</displayName>
-      <description>law codification , reviewing legal ducuments, ensuring legal compilance</description>
-    </role>
-    <role name="supervisor">
-      <displayName>Supervisor</displayName>
-      <description>oversee processes, hhandle exceptions(deplays in codification) and manage cotract termination</description>
-    </role>
-    <role name="primeLeader">
-      <displayName>Prime Leader</displayName>
-      <description>Approve final documents, contracts or new law versions</description>
-    </role>
-    <role name="reviewer">
-      <displayName>Reviewer</displayName>
-      <description>Evaluate and respond to service offers,contracts, law codification</description>
-    </role>
-    <role name="administrativeOfficer">
-      <displayName>Administrative Officer</displayName>
-      <description>Start processes like registration, law submission and other administration related jobs</description>
+    <role name="Member">
+      <displayName>Member</displayName>
+      <description></description>
     </role>
   </roles>
   <groups>
@@ -43,12 +27,44 @@
     <group name="agency">
       <displayName>Agency</displayName>
     </group>
+    <group name="ExecutiveBoard" parentPath="/goverment">
+      <displayName>ExecutiveBoard</displayName>
+      <description>ExecutiveBoard</description>
+    </group>
+    <group name="Employees" parentPath="/goverment">
+      <displayName>Employees</displayName>
+    </group>
+    <group name="RegistrationEmployees" parentPath="/goverment/Employees">
+      <displayName>RegistrationEmployees</displayName>
+    </group>
+    <group name="StandardEmployees" parentPath="/goverment/Employees">
+      <displayName>StandardEmployees</displayName>
+    </group>
+    <group name="Department" parentPath="/agency">
+      <displayName>Department</displayName>
+    </group>
+    <group name="Employees" parentPath="/agency/Department">
+      <displayName>Employees</displayName>
+    </group>
+    <group name="Superiors" parentPath="/agency/Department">
+      <displayName>Superiors</displayName>
+    </group>
+    <group name="Attorneys" parentPath="/agency">
+      <displayName>Attorneys</displayName>
+    </group>
+    <group name="Primary Attorneys" parentPath="/agency/Attorneys">
+      <displayName>Primary Attorneys</displayName>
+    </group>
+    <group name="Revision Attorneys" parentPath="/agency/Attorneys">
+      <displayName>Revision Attorneys</displayName>
+    </group>
   </groups>
   <memberships>
     <membership>
-      <userName>User1</userName>
-      <roleName>serviceManager</roleName>
-      <groupName>goverment</groupName>
+      <userName>Ivana Lazarevic</userName>
+      <roleName>Member</roleName>
+      <groupName>Primary Attorneys</groupName>
+      <groupParentPath>/agency/Attorneys</groupParentPath>
     </membership>
   </memberships>
 </organization:Organization>
