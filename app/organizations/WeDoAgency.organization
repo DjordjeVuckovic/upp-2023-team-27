@@ -28,6 +28,7 @@
       <firstName>Carlos</firstName>
       <lastName>Garcia</lastName>
       <title>Mr</title>
+      <manager>smith123</manager>
       <personalData/>
       <professionalData>
         <email>carlos.garcia@gmail.com</email>
@@ -69,6 +70,7 @@
     <user userName="alihasan">
       <firstName>Ali</firstName>
       <lastName>Hassan</lastName>
+      <manager>smith123</manager>
       <personalData/>
       <professionalData>
         <email>ali.hassan@gmail.com</email>
