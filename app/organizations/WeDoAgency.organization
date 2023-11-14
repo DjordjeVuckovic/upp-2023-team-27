@@ -89,40 +89,6 @@
       <password encrypted="false">bpm</password>
       <customUserInfoValues/>
     </user>
-    <user userName="Krljavi">
-      <firstName>Krlja</firstName>
-      <lastName>Kukic</lastName>
-      <title>Mr</title>
-      <personalData/>
-      <professionalData>
-        <email>krljavi@gmail.com</email>
-      </professionalData>
-      <password encrypted="false">bpm</password>
-      <customUserInfoValues/>
-    </user>
-    <user userName="Veljadin">
-      <firstName>Veljadin</firstName>
-      <lastName>Mihajlovic</lastName>
-      <title>Mr</title>
-      <manager>Krljavi</manager>
-      <personalData/>
-      <professionalData>
-        <email>veljadin.sef@gmail.com</email>
-      </professionalData>
-      <password encrypted="false">bpm</password>
-      <customUserInfoValues/>
-    </user>
-    <user userName="Milja">
-      <firstName>Miljana</firstName>
-      <lastName>Kuljic</lastName>
-      <manager>Krljavi</manager>
-      <personalData/>
-      <professionalData>
-        <email>miljaaa@gmailcom</email>
-      </professionalData>
-      <password encrypted="false">bpm</password>
-      <customUserInfoValues/>
-    </user>
   </users>
   <roles>
     <role name="Member">
@@ -137,40 +103,40 @@
     <group name="agency">
       <displayName>Agency</displayName>
     </group>
-    <group name="executiveBoard" parentPath="/goverment">
+    <group name="ExecutiveBoard" parentPath="/goverment">
       <displayName>ExecutiveBoard</displayName>
       <description>sings the contract that agency made for them</description>
     </group>
-    <group name="employees" parentPath="/goverment">
+    <group name="Employees" parentPath="/goverment">
       <displayName>Employees</displayName>
     </group>
-    <group name="registrationEmployees" parentPath="/goverment/employees">
+    <group name="RegistrationEmployees" parentPath="/goverment/Employees">
       <displayName>RegistrationEmployees</displayName>
       <description>initiates registration process for govermnet</description>
     </group>
-    <group name="standardEmployees" parentPath="/goverment/employees">
+    <group name="StandardEmployees" parentPath="/goverment/Employees">
       <displayName>StandardEmployees</displayName>
       <description>initiates codification process and reviews changes of the law in the process of codification</description>
     </group>
-    <group name="department" parentPath="/agency">
+    <group name="Department" parentPath="/agency">
       <displayName>Department</displayName>
     </group>
-    <group name="employees" parentPath="/agency/department">
+    <group name="Employees" parentPath="/agency/Department">
       <displayName>Employees</displayName>
       <description>takes care of registration process of the goverment</description>
     </group>
-    <group name="superiors" parentPath="/agency/department">
+    <group name="Superiors" parentPath="/agency/Department">
       <displayName>Superiors</displayName>
       <description>reviews the offer made for the goverment and signs the contract</description>
     </group>
-    <group name="attorneys" parentPath="/agency">
+    <group name="Attorneys" parentPath="/agency">
       <displayName>Attorneys</displayName>
     </group>
-    <group name="primaryAttorneys" parentPath="/agency/attorneys">
+    <group name="Primary Attorneys" parentPath="/agency/Attorneys">
       <displayName>Primary Attorneys</displayName>
       <description>takes over the law and begins the process of codification</description>
     </group>
-    <group name="revisionAttorneys" parentPath="/agency/attorneys">
+    <group name="Revision Attorneys" parentPath="/agency/Attorneys">
       <displayName>Revision Attorneys</displayName>
       <description>reviews the law made and all changes made in the process of the codification</description>
     </group>
@@ -179,68 +145,50 @@
     <membership>
       <userName>Ivana Lazarevic</userName>
       <roleName>Member</roleName>
-      <groupName>primaryAttorneys</groupName>
-      <groupParentPath>/agency/attorneys</groupParentPath>
+      <groupName>Primary Attorneys</groupName>
+      <groupParentPath>/agency/Attorneys</groupParentPath>
     </membership>
     <membership>
       <userName>avasmith</userName>
       <roleName>Member</roleName>
-      <groupName>executiveBoard</groupName>
+      <groupName>ExecutiveBoard</groupName>
       <groupParentPath>/goverment</groupParentPath>
     </membership>
     <membership>
       <userName>carloscarcia</userName>
       <roleName>Member</roleName>
-      <groupName>registrationEmployees</groupName>
-      <groupParentPath>/goverment/employees</groupParentPath>
+      <groupName>RegistrationEmployees</groupName>
+      <groupParentPath>/goverment/Employees</groupParentPath>
     </membership>
     <membership>
       <userName>hinapatel</userName>
       <roleName>Member</roleName>
-      <groupName>primaryAttorneys</groupName>
-      <groupParentPath>/agency/attorneys</groupParentPath>
+      <groupName>Primary Attorneys</groupName>
+      <groupParentPath>/agency/Attorneys</groupParentPath>
     </membership>
     <membership>
       <userName>johnsonn</userName>
       <roleName>Member</roleName>
-      <groupName>revisionAttorneys</groupName>
-      <groupParentPath>/agency/attorneys</groupParentPath>
+      <groupName>Revision Attorneys</groupName>
+      <groupParentPath>/agency/Attorneys</groupParentPath>
     </membership>
     <membership>
       <userName>omaralfarsi</userName>
       <roleName>Member</roleName>
-      <groupName>employees</groupName>
-      <groupParentPath>/agency/department</groupParentPath>
+      <groupName>Superiors</groupName>
+      <groupParentPath>/agency/Department</groupParentPath>
     </membership>
     <membership>
       <userName>alihasan</userName>
       <roleName>Member</roleName>
-      <groupName>standardEmployees</groupName>
-      <groupParentPath>/goverment/employees</groupParentPath>
+      <groupName>StandardEmployees</groupName>
+      <groupParentPath>/goverment/Employees</groupParentPath>
     </membership>
     <membership>
       <userName>smith123</userName>
       <roleName>Member</roleName>
-      <groupName>employees</groupName>
-      <groupParentPath>/agency/department</groupParentPath>
-    </membership>
-    <membership>
-      <userName>Krljavi</userName>
-      <roleName>Member</roleName>
-      <groupName>executiveBoard</groupName>
-      <groupParentPath>/goverment</groupParentPath>
-    </membership>
-    <membership>
-      <userName>Veljadin</userName>
-      <roleName>Member</roleName>
-      <groupName>standardEmployees</groupName>
-      <groupParentPath>/goverment/employees</groupParentPath>
-    </membership>
-    <membership>
-      <userName>Milja</userName>
-      <roleName>Member</roleName>
-      <groupName>registrationEmployees</groupName>
-      <groupParentPath>/goverment/employees</groupParentPath>
+      <groupName>Employees</groupName>
+      <groupParentPath>/agency/Department</groupParentPath>
     </membership>
   </memberships>
 </organization:Organization>

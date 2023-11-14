@@ -69,7 +69,7 @@
         </businessObject>
         <businessObject qualifiedName="com.upp.model.LawAnswer">
             <fields>
-                <field type="STRING" length="255" name="text" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="attribute" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
