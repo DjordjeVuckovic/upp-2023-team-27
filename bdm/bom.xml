@@ -18,6 +18,7 @@
                 <field type="BOOLEAN" length="255" name="agencySignature" nullable="true" collection="false"/>
                 <relationField type="COMPOSITION" reference="com.upp.model.Comment" fetchType="LAZY" name="comments" nullable="true" collection="true"/>
                 <field type="BOOLEAN" length="255" name="isPaid" nullable="false" collection="false"/>
+                <field type="BOOLEAN" length="255" name="isAccepted" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
@@ -35,6 +36,7 @@
         <businessObject qualifiedName="com.upp.model.FileBlob">
             <fields>
                 <field type="TEXT" length="255" name="name" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="filePath" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
@@ -62,6 +64,7 @@
                 <relationField type="AGGREGATION" reference="com.upp.model.Government" fetchType="LAZY" name="government" nullable="false" collection="false"/>
                 <relationField type="COMPOSITION" reference="com.upp.model.LawQuestion" fetchType="LAZY" name="questions" nullable="true" collection="true"/>
                 <field type="STRING" length="255" name="status" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="name" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
@@ -88,6 +91,7 @@
             <fields>
                 <relationField type="COMPOSITION" reference="com.upp.model.OfferItem" fetchType="EAGER" name="items" nullable="true" collection="true"/>
                 <relationField type="AGGREGATION" reference="com.upp.model.RegistrationRequest" fetchType="LAZY" name="government" nullable="false" collection="false"/>
+                <field type="BOOLEAN" length="255" name="isAccepted" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
