@@ -500,7 +500,7 @@
         <layoutConstraint xmi:type="notation:Location" xmi:id="_k7zfh5U4Ee66wKeZNf3vLg" y="-10"/>
       </children>
       <styles xmi:type="notation:FontStyle" xmi:id="_k7zfhJU4Ee66wKeZNf3vLg" fontName="Segoe UI"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_k7zfhZU4Ee66wKeZNf3vLg" points="[-2, -9, -101, 0]$[102, -9, 3, 0]"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_k7zfhZU4Ee66wKeZNf3vLg" points="[-2, -10, -133, 2]$[107, -10, -24, 2]"/>
       <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_k7zfiJU4Ee66wKeZNf3vLg" id="(1.0,0.6976744186046512)"/>
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_k7zfiZU4Ee66wKeZNf3vLg" id="(0.8,0.5666666666666667)"/>
     </edges>
@@ -518,7 +518,7 @@
         <layoutConstraint xmi:type="notation:Location" xmi:id="_Q3b815U5Ee66wKeZNf3vLg" y="-10"/>
       </children>
       <styles xmi:type="notation:FontStyle" xmi:id="_Q3b81JU5Ee66wKeZNf3vLg" fontName="Segoe UI"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Q3b81ZU5Ee66wKeZNf3vLg" points="[-100, 72, 10, -465]$[-100, 487, 10, -50]"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Q3b81ZU5Ee66wKeZNf3vLg" points="[-106, 72, 4, -465]$[-106, 487, 4, -50]"/>
       <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Q3b82JU5Ee66wKeZNf3vLg" id="(1.0,0.3142857142857143)"/>
     </edges>
   </notation:Diagram>
