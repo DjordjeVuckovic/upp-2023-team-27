@@ -6,16 +6,11 @@
     <artifactId>wepublishlaws-parent</artifactId>
     <version>0.0.1</version>
   </parent>
-  <artifactId>wepublishlaws-bdm-parent</artifactId>
+  <artifactId>wepublishlaws-extensions</artifactId>
   <packaging>pom</packaging>
-  <modules>
-    <module>model</module>
-    <module>dao-client</module>
-  </modules>
   <build>
     <plugins>
       <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-source-plugin</artifactId>
         <executions>
           <execution>
@@ -24,10 +19,8 @@
               <goal>jar-no-fork</goal>
             </goals>
           </execution>
-          
         </executions>
       </plugin>
-      
     </plugins>
   </build>
 </project>
