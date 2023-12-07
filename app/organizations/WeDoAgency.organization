@@ -132,20 +132,16 @@
     <group name="Attorneys" parentPath="/agency">
       <displayName>Attorneys</displayName>
     </group>
-    <group name="Primary Attorneys" parentPath="/agency/Attorneys">
+    <group name=" Attorneys" parentPath="/agency/Attorneys">
       <displayName>Primary Attorneys</displayName>
       <description>takes over the law and begins the process of codification</description>
-    </group>
-    <group name="Revision Attorneys" parentPath="/agency/Attorneys">
-      <displayName>Revision Attorneys</displayName>
-      <description>reviews the law made and all changes made in the process of the codification</description>
     </group>
   </groups>
   <memberships>
     <membership>
       <userName>Ivana Lazarevic</userName>
       <roleName>Member</roleName>
-      <groupName>Primary Attorneys</groupName>
+      <groupName> Attorneys</groupName>
       <groupParentPath>/agency/Attorneys</groupParentPath>
     </membership>
     <membership>
@@ -163,13 +159,13 @@
     <membership>
       <userName>hinapatel</userName>
       <roleName>Member</roleName>
-      <groupName>Primary Attorneys</groupName>
+      <groupName> Attorneys</groupName>
       <groupParentPath>/agency/Attorneys</groupParentPath>
     </membership>
     <membership>
       <userName>johnsonn</userName>
       <roleName>Member</roleName>
-      <groupName>Revision Attorneys</groupName>
+      <groupName> Attorneys</groupName>
       <groupParentPath>/agency/Attorneys</groupParentPath>
     </membership>
     <membership>

@@ -38,7 +38,7 @@
           <contract xmi:type="process:Contract" xmi:id="_fS_lWZRmEe6QAu7d2zlb3Q"/>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_fS_lXJRmEe6QAu7d2zlb3Q" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
-        <elements xmi:type="process:XORGateway" xmi:id="_psskEJRmEe6QAu7d2zlb3Q" name="Choose revision options" outgoing="_rig2MJRmEe6QAu7d2zlb3Q _xfHXgJRmEe6QAu7d2zlb3Q _37tngJRmEe6QAu7d2zlb3Q" incoming="_qDy1cJRmEe6QAu7d2zlb3Q">
+        <elements xmi:type="process:XORGateway" xmi:id="_psskEJRmEe6QAu7d2zlb3Q" name="Choose revision options" outgoing="_37tngJRmEe6QAu7d2zlb3Q _rig2MJRmEe6QAu7d2zlb3Q _xfHXgJRmEe6QAu7d2zlb3Q" incoming="_qDy1cJRmEe6QAu7d2zlb3Q">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_psskEpRmEe6QAu7d2zlb3Q" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_psskEZRmEe6QAu7d2zlb3Q" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_psskE5RmEe6QAu7d2zlb3Q" name="" content="" returnTypeFixed="true"/>
@@ -118,6 +118,9 @@
           <expectedDuration xmi:type="expression:Expression" xmi:id="_TaAlLJRmEe6QAu7d2zlb3Q" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
       </elements>
+      <data xmi:type="process:Data" xmi:id="_4Nyf0JUzEe6yPaB41LqcJQ" name="revisionOption" dataType="_xJN1npRlEe6QAu7d2zlb3Q">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_4Nyf0ZUzEe6yPaB41LqcJQ" name="1" content="1" returnType="java.lang.Integer"/>
+      </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_xJN1hJRlEe6QAu7d2zlb3Q">
         <targetForm xmi:type="expression:Expression" xmi:id="_xJN1hZRlEe6QAu7d2zlb3Q" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
