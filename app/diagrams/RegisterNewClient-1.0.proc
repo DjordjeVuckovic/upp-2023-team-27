@@ -116,7 +116,7 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_k3SgGJIQEe6ETJDNpyFByQ" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_k3SgF5IQEe6ETJDNpyFByQ" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <calledActivityName xmi:type="expression:Expression" xmi:id="_01njxJUrEe6yPaB41LqcJQ" name="ContractTermination" content="ContractTermination" returnTypeFixed="true"/>
-          <calledActivityVersion xmi:type="expression:Expression" xmi:id="_01njxZUrEe6yPaB41LqcJQ" name="" content="" returnTypeFixed="true"/>
+          <calledActivityVersion xmi:type="expression:Expression" xmi:id="_01njxZUrEe6yPaB41LqcJQ" name="1.0" content="1.0" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:EndEvent" xmi:id="_jjeSUJIREe6ETJDNpyFByQ" name="End1" incoming="_S9IJ4JUsEe6yPaB41LqcJQ">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_jjeSUpIREe6ETJDNpyFByQ" name="" content="" returnTypeFixed="true"/>
