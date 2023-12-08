@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:decision="http://www.bonitasoft.org/ns/bpm/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/bpm/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/bpm/process">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:actormapping="http://www.bonitasoft.org/ns/actormapping/6.0" xmlns:configuration="http://www.bonitasoft.org/ns/bpm/configuration" xmlns:decision="http://www.bonitasoft.org/ns/bpm/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/bpm/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/bpm/process">
   <process:MainProcess xmi:id="_uczxMJRzEe68Q-EpY9e5ZQ" name="ContractTerminationLastStep" bonitaModelVersion="8">
     <elements xmi:type="process:Pool" xmi:id="_uczxMZRzEe68Q-EpY9e5ZQ" name="ContractTerminationLastStep">
-      <elements xmi:type="process:Lane" xmi:id="_uczxMpRzEe68Q-EpY9e5ZQ" name="Agency lane" actor="_uczxS5RzEe68Q-EpY9e5ZQ">
+      <elements xmi:type="process:Lane" xmi:id="_uczxMpRzEe68Q-EpY9e5ZQ" name="Agency lane" actor="_4zh6oJW2Ee67AZRuP5tRmg">
         <elements xmi:type="process:StartEvent" xmi:id="_uczxM5RzEe68Q-EpY9e5ZQ" name="Start1" outgoing="_-m8dgJRzEe68Q-EpY9e5ZQ">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_uczxNJRzEe68Q-EpY9e5ZQ" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_uczxNZRzEe68Q-EpY9e5ZQ" name="" content="" returnTypeFixed="true"/>
@@ -76,7 +76,24 @@
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_LhMtcZR0Ee68Q-EpY9e5ZQ"/>
         <condition xmi:type="expression:Expression" xmi:id="_LhMtcpR0Ee68Q-EpY9e5ZQ" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
-      <actors xmi:type="process:Actor" xmi:id="_uczxS5RzEe68Q-EpY9e5ZQ" documentation="This is an example of actor that is mapped to any ACME users" name="Employee actor" initiator="true"/>
+      <actors xmi:type="process:Actor" xmi:id="_4zh6oJW2Ee67AZRuP5tRmg" name="Agency attorney"/>
+      <configurations xmi:type="configuration:Configuration" xmi:id="_3BZ1sJW2Ee67AZRuP5tRmg" name="Production" version="8" username="walter.bates">
+        <actorMappings xmi:type="actormapping:ActorMappingsType" xmi:id="_3BacwJW2Ee67AZRuP5tRmg">
+          <actorMapping xmi:type="actormapping:ActorMapping" xmi:id="_-OQd8JW2Ee67AZRuP5tRmg" name="Agency attorney">
+            <groups xmi:type="actormapping:Groups" xmi:id="_-OQd8ZW2Ee67AZRuP5tRmg">
+              <group>/agency/Attorneys/ Attorneys</group>
+            </groups>
+            <memberships xmi:type="actormapping:Membership" xmi:id="_-OQd8pW2Ee67AZRuP5tRmg"/>
+            <roles xmi:type="actormapping:Roles" xmi:id="_-OQd85W2Ee67AZRuP5tRmg"/>
+            <users xmi:type="actormapping:Users" xmi:id="_-OQd9JW2Ee67AZRuP5tRmg"/>
+          </actorMapping>
+        </actorMappings>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_3BZ1sZW2Ee67AZRuP5tRmg" id="CONNECTOR"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_3BZ1spW2Ee67AZRuP5tRmg" id="GROOVY_SCRIPT"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_3BZ1s5W2Ee67AZRuP5tRmg" id="ACTOR_FILTER"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_3BZ1tJW2Ee67AZRuP5tRmg" id="OTHER"/>
+        <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_3BZ1tZW2Ee67AZRuP5tRmg" id="GROOVY_SCRIPT"/>
+      </configurations>
       <contract xmi:type="process:Contract" xmi:id="_uczxTJRzEe68Q-EpY9e5ZQ"/>
       <searchIndexes xmi:type="process:SearchIndex" xmi:id="_uczxTZRzEe68Q-EpY9e5ZQ">
         <name xmi:type="expression:Expression" xmi:id="_uczxTpRzEe68Q-EpY9e5ZQ" content="" returnTypeFixed="true"/>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:decision="http://www.bonitasoft.org/ns/bpm/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/bpm/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/bpm/process">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:actormapping="http://www.bonitasoft.org/ns/actormapping/6.0" xmlns:configuration="http://www.bonitasoft.org/ns/bpm/configuration" xmlns:decision="http://www.bonitasoft.org/ns/bpm/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/bpm/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/bpm/process">
   <process:MainProcess xmi:id="_HurD0JPAEe6v7-tu9WK1HQ" name="ParallelFormsContractTermination" bonitaModelVersion="8">
     <elements xmi:type="process:Pool" xmi:id="_HurD0ZPAEe6v7-tu9WK1HQ" name="ParallelFormsContractTermination">
-      <elements xmi:type="process:Lane" xmi:id="_HurD0pPAEe6v7-tu9WK1HQ" name="Goverment" actor="_HurEE5PAEe6v7-tu9WK1HQ">
+      <elements xmi:type="process:Lane" xmi:id="_HurD0pPAEe6v7-tu9WK1HQ" name="Goverment" actor="_MLCpQJW0Ee67AZRuP5tRmg">
         <elements xmi:type="process:Task" xmi:id="_HurD15PAEe6v7-tu9WK1HQ" name="Provision submitted form goverment superior" outgoing="_U1B2EJPAEe6v7-tu9WK1HQ" incoming="_HurEDZPAEe6v7-tu9WK1HQ" overrideActorsOfTheLane="false">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_HurD2JPAEe6v7-tu9WK1HQ" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_HurD2ZPAEe6v7-tu9WK1HQ" name="" content="" returnTypeFixed="true"/>
@@ -59,7 +59,7 @@
           <stepSummary xmi:type="expression:Expression" xmi:id="_HurD1pPAEe6v7-tu9WK1HQ" name="" content="" returnTypeFixed="true"/>
         </elements>
       </elements>
-      <elements xmi:type="process:Lane" xmi:id="_HurD9ZPAEe6v7-tu9WK1HQ" name="Agency">
+      <elements xmi:type="process:Lane" xmi:id="_HurD9ZPAEe6v7-tu9WK1HQ" name="Agency" actor="_Kf8ZYJW0Ee67AZRuP5tRmg">
         <elements xmi:type="process:Task" xmi:id="_HurD9pPAEe6v7-tu9WK1HQ" name="Provision submitted form primary attorney" outgoing="_Qij7UJPAEe6v7-tu9WK1HQ" incoming="_b6luEJPBEe6v7-tu9WK1HQ" overrideActorsOfTheLane="false">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_HurD95PAEe6v7-tu9WK1HQ" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_HurD-JPAEe6v7-tu9WK1HQ" name="" content="" returnTypeFixed="true"/>
@@ -137,7 +137,33 @@
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_-RKVoZPBEe6v7-tu9WK1HQ"/>
         <condition xmi:type="expression:Expression" xmi:id="_-RKVopPBEe6v7-tu9WK1HQ" name="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
-      <actors xmi:type="process:Actor" xmi:id="_HurEE5PAEe6v7-tu9WK1HQ" documentation="This is an example of actor that is mapped to any ACME users" name="Employee actor" initiator="true"/>
+      <actors xmi:type="process:Actor" xmi:id="_Kf8ZYJW0Ee67AZRuP5tRmg" name="Agency primary attorney"/>
+      <actors xmi:type="process:Actor" xmi:id="_MLCpQJW0Ee67AZRuP5tRmg" name="Goverment employee"/>
+      <configurations xmi:type="configuration:Configuration" xmi:id="_TWol4JW3Ee67AZRuP5tRmg" name="Production" version="8" username="walter.bates">
+        <actorMappings xmi:type="actormapping:ActorMappingsType" xmi:id="_TWol5pW3Ee67AZRuP5tRmg">
+          <actorMapping xmi:type="actormapping:ActorMapping" xmi:id="_TWol55W3Ee67AZRuP5tRmg" name="Agency primary attorney">
+            <groups xmi:type="actormapping:Groups" xmi:id="_TWol6JW3Ee67AZRuP5tRmg">
+              <group>/agency/Attorneys/ Attorneys</group>
+            </groups>
+            <memberships xmi:type="actormapping:Membership" xmi:id="_TWol6ZW3Ee67AZRuP5tRmg"/>
+            <roles xmi:type="actormapping:Roles" xmi:id="_TWol6pW3Ee67AZRuP5tRmg"/>
+            <users xmi:type="actormapping:Users" xmi:id="_TWol65W3Ee67AZRuP5tRmg"/>
+          </actorMapping>
+          <actorMapping xmi:type="actormapping:ActorMapping" xmi:id="_TWol7JW3Ee67AZRuP5tRmg" name="Goverment employee">
+            <groups xmi:type="actormapping:Groups" xmi:id="_TWol7ZW3Ee67AZRuP5tRmg">
+              <group>/goverment/Employees/StandardEmployees</group>
+            </groups>
+            <memberships xmi:type="actormapping:Membership" xmi:id="_TWol7pW3Ee67AZRuP5tRmg"/>
+            <roles xmi:type="actormapping:Roles" xmi:id="_TWol75W3Ee67AZRuP5tRmg"/>
+            <users xmi:type="actormapping:Users" xmi:id="_TWol8JW3Ee67AZRuP5tRmg"/>
+          </actorMapping>
+        </actorMappings>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_TWol4ZW3Ee67AZRuP5tRmg" id="CONNECTOR"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_TWol4pW3Ee67AZRuP5tRmg" id="GROOVY_SCRIPT"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_TWol45W3Ee67AZRuP5tRmg" id="ACTOR_FILTER"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_TWol5JW3Ee67AZRuP5tRmg" id="OTHER"/>
+        <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_TWol5ZW3Ee67AZRuP5tRmg" id="GROOVY_SCRIPT"/>
+      </configurations>
       <contract xmi:type="process:Contract" xmi:id="_HurEFJPAEe6v7-tu9WK1HQ"/>
       <searchIndexes xmi:type="process:SearchIndex" xmi:id="_HurEFZPAEe6v7-tu9WK1HQ">
         <name xmi:type="expression:Expression" xmi:id="_HurEFpPAEe6v7-tu9WK1HQ" content="" returnTypeFixed="true"/>
@@ -330,7 +356,7 @@
         <layoutConstraint xmi:type="notation:Location" xmi:id="_-RK8tJPBEe6v7-tu9WK1HQ" y="-10"/>
       </children>
       <styles xmi:type="notation:FontStyle" xmi:id="_-RK8sZPBEe6v7-tu9WK1HQ" fontName="Segoe UI"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_-RK8spPBEe6v7-tu9WK1HQ" points="[-22, 9, -70, -198]$[-22, 181, -70, -26]$[42, 181, -6, -26]"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_-RK8spPBEe6v7-tu9WK1HQ" points="[-22, 9, -98, -198]$[-22, 181, -98, -26]$[70, 181, -6, -26]"/>
       <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_-RMK0JPBEe6v7-tu9WK1HQ" id="(1.0,0.7906976744186046)"/>
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_-RMK0ZPBEe6v7-tu9WK1HQ" id="(0.027522935779816515,0.5636363636363636)"/>
     </edges>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:decision="http://www.bonitasoft.org/ns/bpm/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/bpm/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/bpm/process">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:actormapping="http://www.bonitasoft.org/ns/actormapping/6.0" xmlns:configuration="http://www.bonitasoft.org/ns/bpm/configuration" xmlns:decision="http://www.bonitasoft.org/ns/bpm/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/bpm/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/bpm/process">
   <process:MainProcess xmi:id="_2TPoUJIKEe6ETJDNpyFByQ" name="RegisterNewClient" bonitaModelVersion="8">
     <elements xmi:type="process:Pool" xmi:id="_2TPoUZIKEe6ETJDNpyFByQ" name="Client Registartation Process">
       <elements xmi:type="process:Lane" xmi:id="_2TPoUpIKEe6ETJDNpyFByQ" name="Goverment registration lane" actor="_JbtRgJIMEe6ETJDNpyFByQ">
@@ -337,6 +337,47 @@
       <actors xmi:type="process:Actor" xmi:id="_fx2TcJIUEe6ETJDNpyFByQ" name="Agency employee"/>
       <actors xmi:type="process:Actor" xmi:id="_wharQJIYEe6ETJDNpyFByQ" name="Agency manager"/>
       <actors xmi:type="process:Actor" xmi:id="_0IxzgJIYEe6ETJDNpyFByQ" name="Executive board"/>
+      <configurations xmi:type="configuration:Configuration" xmi:id="_dlp-oJW3Ee67AZRuP5tRmg" name="Production" version="8" username="walter.bates">
+        <actorMappings xmi:type="actormapping:ActorMappingsType" xmi:id="_dlp-ppW3Ee67AZRuP5tRmg">
+          <actorMapping xmi:type="actormapping:ActorMapping" xmi:id="_dlp-p5W3Ee67AZRuP5tRmg" name="Goverment Registration role">
+            <groups xmi:type="actormapping:Groups" xmi:id="_dlp-qJW3Ee67AZRuP5tRmg">
+              <group>/goverment/Employees/RegistrationEmployees</group>
+            </groups>
+            <memberships xmi:type="actormapping:Membership" xmi:id="_dlp-qZW3Ee67AZRuP5tRmg"/>
+            <roles xmi:type="actormapping:Roles" xmi:id="_dlp-qpW3Ee67AZRuP5tRmg"/>
+            <users xmi:type="actormapping:Users" xmi:id="_dlp-q5W3Ee67AZRuP5tRmg"/>
+          </actorMapping>
+          <actorMapping xmi:type="actormapping:ActorMapping" xmi:id="_dlp-rJW3Ee67AZRuP5tRmg" name="Agency employee">
+            <groups xmi:type="actormapping:Groups" xmi:id="_dlp-rZW3Ee67AZRuP5tRmg">
+              <group>/agency/Department/Employees</group>
+            </groups>
+            <memberships xmi:type="actormapping:Membership" xmi:id="_dlp-rpW3Ee67AZRuP5tRmg"/>
+            <roles xmi:type="actormapping:Roles" xmi:id="_dlp-r5W3Ee67AZRuP5tRmg"/>
+            <users xmi:type="actormapping:Users" xmi:id="_dlp-sJW3Ee67AZRuP5tRmg"/>
+          </actorMapping>
+          <actorMapping xmi:type="actormapping:ActorMapping" xmi:id="_dlp-sZW3Ee67AZRuP5tRmg" name="Agency manager">
+            <groups xmi:type="actormapping:Groups" xmi:id="_dlp-spW3Ee67AZRuP5tRmg">
+              <group>/agency/Department/Superiors</group>
+            </groups>
+            <memberships xmi:type="actormapping:Membership" xmi:id="_dlp-s5W3Ee67AZRuP5tRmg"/>
+            <roles xmi:type="actormapping:Roles" xmi:id="_dlp-tJW3Ee67AZRuP5tRmg"/>
+            <users xmi:type="actormapping:Users" xmi:id="_dlp-tZW3Ee67AZRuP5tRmg"/>
+          </actorMapping>
+          <actorMapping xmi:type="actormapping:ActorMapping" xmi:id="_dlp-tpW3Ee67AZRuP5tRmg" name="Executive board">
+            <groups xmi:type="actormapping:Groups" xmi:id="_dlp-t5W3Ee67AZRuP5tRmg">
+              <group>/goverment/ExecutiveBoard</group>
+            </groups>
+            <memberships xmi:type="actormapping:Membership" xmi:id="_dlp-uJW3Ee67AZRuP5tRmg"/>
+            <roles xmi:type="actormapping:Roles" xmi:id="_dlp-uZW3Ee67AZRuP5tRmg"/>
+            <users xmi:type="actormapping:Users" xmi:id="_dlp-upW3Ee67AZRuP5tRmg"/>
+          </actorMapping>
+        </actorMappings>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_dlp-oZW3Ee67AZRuP5tRmg" id="CONNECTOR"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_dlp-opW3Ee67AZRuP5tRmg" id="GROOVY_SCRIPT"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_dlp-o5W3Ee67AZRuP5tRmg" id="ACTOR_FILTER"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_dlp-pJW3Ee67AZRuP5tRmg" id="OTHER"/>
+        <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_dlp-pZW3Ee67AZRuP5tRmg" id="GROOVY_SCRIPT"/>
+      </configurations>
       <contract xmi:type="process:Contract" xmi:id="_2TPobJIKEe6ETJDNpyFByQ"/>
       <searchIndexes xmi:type="process:SearchIndex" xmi:id="_2TPobZIKEe6ETJDNpyFByQ">
         <name xmi:type="expression:Expression" xmi:id="_2TPobpIKEe6ETJDNpyFByQ" content="" returnTypeFixed="true"/>
