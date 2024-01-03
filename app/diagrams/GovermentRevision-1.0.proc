@@ -70,7 +70,7 @@
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_ZznqIJU4Ee66wKeZNf3vLg" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_ZznqIpU4Ee66wKeZNf3vLg" name="" content="" returnTypeFixed="true"/>
         </elements>
-        <elements xmi:type="process:XORGateway" xmi:id="_g75UYJU4Ee66wKeZNf3vLg" name="isParaller?" outgoing="_jHqoYJU4Ee66wKeZNf3vLg _jhCKoJU4Ee66wKeZNf3vLg" incoming="_iDB7kJU4Ee66wKeZNf3vLg">
+        <elements xmi:type="process:XORGateway" xmi:id="_g75UYJU4Ee66wKeZNf3vLg" name="isParallel?" outgoing="_jHqoYJU4Ee66wKeZNf3vLg _jhCKoJU4Ee66wKeZNf3vLg" incoming="_iDB7kJU4Ee66wKeZNf3vLg">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_g75UYpU4Ee66wKeZNf3vLg" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_g75UYZU4Ee66wKeZNf3vLg" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_g75UY5U4Ee66wKeZNf3vLg" name="" content="" returnTypeFixed="true"/>
@@ -313,7 +313,7 @@
               <children xmi:type="notation:DecorationNode" xmi:id="_5xoARpRmEe6QAu7d2zlb3Q" type="5020" element="_5xoAQJRmEe6QAu7d2zlb3Q">
                 <layoutConstraint xmi:type="notation:Location" xmi:id="_5xoAR5RmEe6QAu7d2zlb3Q" y="5"/>
               </children>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5xoARZRmEe6QAu7d2zlb3Q" x="1123" y="334"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5xoARZRmEe6QAu7d2zlb3Q" x="1123" y="316"/>
             </children>
             <children xmi:type="notation:Shape" xmi:id="_brtClJU3Ee6yPaB41LqcJQ" type="3003" element="_brtCkJU3Ee6yPaB41LqcJQ" fontName="Segoe UI">
               <children xmi:type="notation:DecorationNode" xmi:id="_brtClpU3Ee6yPaB41LqcJQ" type="5025" element="_brtCkJU3Ee6yPaB41LqcJQ">
