@@ -1,10 +1,10 @@
 {
-  "id" : "offerForm",
-  "name" : "offerForm",
+  "id" : "newForm",
+  "name" : "newForm",
   "type" : "form",
-  "uuid" : "de70d2f3-d95c-4393-ad20-64119c08d628",
+  "uuid" : "6f45de76-7af6-414a-b182-c0a0d01fd25f",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1704410376311,
+  "lastUpdate" : 1704410128381,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -14,7 +14,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "d7e09a83-1b78-494f-a93c-8f07b52cf639",
+        "reference" : "70f76800-b6e8-4303-9ffa-3e44c86330a2",
         "hasValidationError" : false,
         "id" : "pbContainer",
         "rows" : [
@@ -53,7 +53,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "6f6a0f93-20a3-49b8-99fa-d68f29d966ad",
+              "reference" : "1a001041-152d-4f68-9c51-b8fd84817d0c",
               "hasValidationError" : false,
               "id" : "pbTitle",
               "description" : ""
@@ -101,7 +101,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "b5e61b7a-2fda-4a28-a2f8-f2911633a85d",
+              "reference" : "c45e5688-9f0f-4e32-8183-2a746a287d3c",
               "hasValidationError" : false,
               "id" : "pbText",
               "description" : ""
@@ -117,7 +117,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "43f53210-eeb0-402a-8c28-ccab475ed8aa",
+        "reference" : "5dbd9039-001d-4f40-bdd7-b782db9bb42b",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -126,7 +126,7 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "da93a81d-30cd-4204-be07-daead3162236",
+          "reference" : "e4a929cc-b14d-4fb2-84e2-366035fe3013",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
@@ -165,7 +165,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "5b214957-79ff-4e84-97be-41c34fee6877",
+                "reference" : "9750b468-4372-4cd8-81b7-c3a0e2347fb2",
                 "hasValidationError" : false,
                 "id" : "pbTitle",
                 "description" : ""
@@ -197,7 +197,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "ba9c337b-bc7f-4d36-a71d-fadb8daff40e",
+                "reference" : "2e043c6b-9d3d-4e95-8e48-6c7ab6a97f88",
                 "hasValidationError" : false,
                 "id" : "pbContainer",
                 "rows" : [
@@ -236,7 +236,7 @@
                           "value" : 12
                         }
                       },
-                      "reference" : "8c42c451-b062-4a52-a700-5130ad2aaaa2",
+                      "reference" : "121d097b-8112-42b6-a61f-97622b2d63d6",
                       "hasValidationError" : false,
                       "id" : "pbTitle",
                       "description" : ""
@@ -269,7 +269,7 @@
                           "value" : 12
                         }
                       },
-                      "reference" : "eb085b75-bf4d-4c1a-a8ef-47aed4ffdffe",
+                      "reference" : "b33547c0-acb0-4924-89ea-b01dd448a5e6",
                       "hasValidationError" : false,
                       "id" : "pbContainer",
                       "rows" : [
@@ -331,7 +331,7 @@
                                 "value" : true
                               }
                             },
-                            "reference" : "1bf364e0-c61e-4e12-aeb6-9511dacc280f",
+                            "reference" : "d1273fc5-11f8-46ce-bdd7-8a140706fc41",
                             "hasValidationError" : false,
                             "id" : "pbInput",
                             "description" : ""
@@ -395,7 +395,7 @@
                                 "value" : true
                               }
                             },
-                            "reference" : "373a624d-426e-4abf-85e0-e7d73a81d41b",
+                            "reference" : "b43acb03-1b0e-4c6a-92a4-e4ffc547cde0",
                             "hasValidationError" : false,
                             "id" : "pbInput",
                             "description" : ""
@@ -459,7 +459,7 @@
                                 "value" : true
                               }
                             },
-                            "reference" : "903d9bb3-4ec5-4eab-bbf7-827453c029d3",
+                            "reference" : "4482fb39-bfd2-445f-adb4-25653951caa0",
                             "hasValidationError" : false,
                             "id" : "pbInput",
                             "description" : ""
@@ -537,7 +537,7 @@
                                 "value" : 12
                               }
                             },
-                            "reference" : "713d3036-e1d1-4334-8171-9158fa23498c",
+                            "reference" : "ad4af1a2-d808-4bf9-86ba-463fff10fde1",
                             "hasValidationError" : false,
                             "id" : "pbButton",
                             "description" : ""
@@ -617,7 +617,7 @@
                           "value" : 12
                         }
                       },
-                      "reference" : "e9ba3533-37ed-4f61-9e7a-14110bd55ab1",
+                      "reference" : "79202c41-11cc-4bdb-8d86-deea8799e05f",
                       "hasValidationError" : false,
                       "id" : "pbButton",
                       "description" : ""
@@ -658,7 +658,7 @@
                           "value" : 12
                         }
                       },
-                      "reference" : "a1e35a09-7877-4fa7-9955-f2af6b47af1a",
+                      "reference" : "0085b649-310b-4227-962d-3c9895626a53",
                       "hasValidationError" : false,
                       "id" : "pbTitle",
                       "description" : ""
@@ -690,10 +690,71 @@
                           "value" : 12
                         }
                       },
-                      "reference" : "7c197abc-43fb-4800-97d9-3646ae13bd7f",
+                      "reference" : "0a773d10-8e71-4fa6-b78d-890954d15834",
                       "hasValidationError" : false,
                       "id" : "pbContainer",
                       "rows" : [
+                        [
+                          {
+                            "type" : "component",
+                            "dimension" : {
+                              "md" : 12,
+                              "sm" : 12,
+                              "xs" : 12,
+                              "lg" : 12
+                            },
+                            "propertyValues" : {
+                              "labelHidden" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "hidden" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "labelPosition" : {
+                                "type" : "constant",
+                                "value" : "top"
+                              },
+                              "cssClasses" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "availableValues" : {
+                                "type" : "expression",
+                                "value" : "registrationRequest_query"
+                              },
+                              "labelWidth" : {
+                                "type" : "constant",
+                                "value" : 1
+                              },
+                              "label" : {
+                                "type" : "interpolation",
+                                "value" : "Government"
+                              },
+                              "placeholder" : {
+                                "type" : "constant",
+                                "value" : "Select a Government"
+                              },
+                              "dimension" : {
+                                "type" : "constant",
+                                "value" : 12
+                              },
+                              "value" : {
+                                "type" : "variable",
+                                "value" : "offer_government"
+                              },
+                              "required" : {
+                                "type" : "constant",
+                                "value" : true
+                              }
+                            },
+                            "reference" : "ab3ef8d5-4517-49f8-85e3-67478e1e3f61",
+                            "hasValidationError" : false,
+                            "id" : "pbSelect",
+                            "description" : ""
+                          }
+                        ],
                         [
                           {
                             "type" : "component",
@@ -737,7 +798,7 @@
                                 "value" : 12
                               }
                             },
-                            "reference" : "a0b4d83a-b4ad-4b0f-b09b-95f466257412",
+                            "reference" : "6c65b476-19fc-4d8d-96e5-faea3ce7c1d1",
                             "hasValidationError" : false,
                             "id" : "pbText",
                             "description" : ""
@@ -778,7 +839,7 @@
                                 "value" : 12
                               }
                             },
-                            "reference" : "57ad890b-b275-4a31-bccc-d2fa10d59d1c",
+                            "reference" : "56a7b5c7-b78f-4c02-99ab-73d7f72300b5",
                             "hasValidationError" : false,
                             "id" : "pbTitle",
                             "description" : ""
@@ -810,7 +871,7 @@
                                 "value" : 12
                               }
                             },
-                            "reference" : "be381e51-f0b5-4671-8d6d-df010bca699c",
+                            "reference" : "ce290734-dbdc-4d7b-8e9f-8ff18a52ac9a",
                             "hasValidationError" : false,
                             "id" : "pbContainer",
                             "rows" : [
@@ -857,7 +918,7 @@
                                       "value" : 12
                                     }
                                   },
-                                  "reference" : "020db9d0-d9c4-4a9d-91fd-9ae2abd3589d",
+                                  "reference" : "a0e86775-b106-4c23-9f09-f7410013261a",
                                   "hasValidationError" : false,
                                   "id" : "pbText",
                                   "description" : ""
@@ -909,7 +970,7 @@
                                 "value" : 12
                               }
                             },
-                            "reference" : "af9776a1-0885-455c-9490-7df609c54f29",
+                            "reference" : "afe49a64-12ec-42cd-816e-1816feda8201",
                             "hasValidationError" : false,
                             "id" : "pbText",
                             "description" : ""
@@ -958,7 +1019,7 @@
                                 "value" : 12
                               }
                             },
-                            "reference" : "57b50756-e240-41ff-8655-04b151f45b59",
+                            "reference" : "39f7de8d-8a17-4b4d-b081-259a7eb6df23",
                             "hasValidationError" : false,
                             "id" : "pbText",
                             "description" : ""
@@ -1007,7 +1068,7 @@
                                 "value" : 12
                               }
                             },
-                            "reference" : "fae7724d-3f63-4a64-8579-47b49e65a280",
+                            "reference" : "58b6c83d-0950-4603-a1bf-e86572a8a69d",
                             "hasValidationError" : false,
                             "id" : "pbText",
                             "description" : ""
@@ -1056,7 +1117,7 @@
                                 "value" : 12
                               }
                             },
-                            "reference" : "e4346d08-b602-4de9-80a1-3870103ca8b9",
+                            "reference" : "e47ac40a-326e-4931-9d7b-22e4a7609930",
                             "hasValidationError" : false,
                             "id" : "pbText",
                             "description" : ""
@@ -1101,7 +1162,7 @@
                                 "value" : "offer_government.isLawOverviewMandatory"
                               }
                             },
-                            "reference" : "4a48e4ed-0f37-4b78-ada2-cf1ffaa52498",
+                            "reference" : "a7cc6598-523e-4ee7-9d5e-e8d77fe5b7a9",
                             "hasValidationError" : false,
                             "id" : "pbCheckbox",
                             "description" : ""
@@ -1150,13 +1211,58 @@
                                 "value" : 12
                               }
                             },
-                            "reference" : "2dde8cc2-75df-4dd7-a71f-b689ef8c7e16",
+                            "reference" : "e109f5cb-8c1f-4480-9923-747230f68422",
                             "hasValidationError" : false,
                             "id" : "pbText",
                             "description" : ""
                           }
                         ]
                       ]
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "disabled" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Is Accepted"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "offer.isAccepted"
+                        }
+                      },
+                      "reference" : "4fea5b17-600e-4995-86c7-8d74315be309",
+                      "hasValidationError" : false,
+                      "id" : "pbCheckbox",
+                      "description" : ""
                     }
                   ]
                 ]
@@ -1237,7 +1343,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "9dc401ac-ea27-4247-9897-7fdb14b4f740",
+                "reference" : "6fb43f88-5ecc-4909-945d-53af1fe0ca9d",
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
@@ -1289,7 +1395,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "656de888-cee7-47e2-a054-e77d5b838e86",
+                "reference" : "8d485312-8509-4523-82dc-1dd14a5e542c",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
@@ -1318,7 +1424,7 @@
     "offer_government" : {
       "type" : "url",
       "value" : [
-        "../{{context.registerRequest_ref.link}}"
+        "{{offer|lazyRef:'government'}}"
       ],
       "exposed" : false
     },
@@ -1380,7 +1486,7 @@
     "registrationRequest_query" : {
       "type" : "url",
       "value" : [
-        "../{{context.registerRequest_ref.link}}"
+        "../API/bdm/businessData/com.upp.model.RegistrationRequest?q=find&p=0&c=99"
       ],
       "exposed" : false
     },
@@ -1394,16 +1500,16 @@
   },
   "assets" : [
     {
-      "id" : "6a0900ea-1d8f-4f2b-881e-86eedf73d5a6",
-      "name" : "style.css",
-      "type" : "css",
+      "id" : "4c02f5ac-391e-4c08-98a4-002ba17be72b",
+      "name" : "localization.json",
+      "type" : "json",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "7a7e36d0-7d12-4227-9861-5b1d932358d5",
-      "name" : "localization.json",
-      "type" : "json",
+      "id" : "34e11f4f-3338-426b-ab8a-f466b3a5f7d5",
+      "name" : "style.css",
+      "type" : "css",
       "order" : 0,
       "external" : false
     }

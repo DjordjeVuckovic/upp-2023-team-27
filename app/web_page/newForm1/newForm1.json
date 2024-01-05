@@ -1,10 +1,10 @@
 {
-  "id" : "offerForm",
-  "name" : "offerForm",
+  "id" : "newForm1",
+  "name" : "newForm1",
   "type" : "form",
-  "uuid" : "de70d2f3-d95c-4393-ad20-64119c08d628",
+  "uuid" : "4e259f06-7924-439a-bb25-6beb9e8af895",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1704410376311,
+  "lastUpdate" : 1704473013678,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -14,7 +14,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "d7e09a83-1b78-494f-a93c-8f07b52cf639",
+        "reference" : "9def09e1-cb1e-45cd-95b0-606b07fff4c0",
         "hasValidationError" : false,
         "id" : "pbContainer",
         "rows" : [
@@ -53,7 +53,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "6f6a0f93-20a3-49b8-99fa-d68f29d966ad",
+              "reference" : "6842a07c-ba89-4ed2-9552-37ce48c03e51",
               "hasValidationError" : false,
               "id" : "pbTitle",
               "description" : ""
@@ -101,7 +101,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "b5e61b7a-2fda-4a28-a2f8-f2911633a85d",
+              "reference" : "fd603518-6a75-4e44-9c5c-fb2ac67857a1",
               "hasValidationError" : false,
               "id" : "pbText",
               "description" : ""
@@ -117,7 +117,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "43f53210-eeb0-402a-8c28-ccab475ed8aa",
+        "reference" : "a24340aa-e38a-4a06-b5ca-2c44095737d8",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -126,7 +126,7 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "da93a81d-30cd-4204-be07-daead3162236",
+          "reference" : "d9f62e14-aaf1-424a-a608-39bfa75bba42",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
@@ -154,7 +154,7 @@
                   },
                   "text" : {
                     "type" : "interpolation",
-                    "value" : "Offer"
+                    "value" : "Contract"
                   },
                   "alignment" : {
                     "type" : "constant",
@@ -165,7 +165,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "5b214957-79ff-4e84-97be-41c34fee6877",
+                "reference" : "22984892-fea7-4a7a-8b71-2c4cf803327c",
                 "hasValidationError" : false,
                 "id" : "pbTitle",
                 "description" : ""
@@ -197,7 +197,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "ba9c337b-bc7f-4d36-a71d-fadb8daff40e",
+                "reference" : "5634e13d-d759-42da-8a75-4f13fa838015",
                 "hasValidationError" : false,
                 "id" : "pbContainer",
                 "rows" : [
@@ -225,7 +225,7 @@
                         },
                         "text" : {
                           "type" : "interpolation",
-                          "value" : "Items"
+                          "value" : "Contract Items"
                         },
                         "alignment" : {
                           "type" : "constant",
@@ -236,7 +236,7 @@
                           "value" : 12
                         }
                       },
-                      "reference" : "8c42c451-b062-4a52-a700-5130ad2aaaa2",
+                      "reference" : "17921aed-f6ce-4e8b-b756-943f11696554",
                       "hasValidationError" : false,
                       "id" : "pbTitle",
                       "description" : ""
@@ -254,7 +254,7 @@
                       "propertyValues" : {
                         "repeatedCollection" : {
                           "type" : "variable",
-                          "value" : "offer.items"
+                          "value" : "contract.contractItems"
                         },
                         "hidden" : {
                           "type" : "constant",
@@ -269,7 +269,7 @@
                           "value" : 12
                         }
                       },
-                      "reference" : "eb085b75-bf4d-4c1a-a8ef-47aed4ffdffe",
+                      "reference" : "77888817-a4ef-41b0-a315-3f88c2a8a543",
                       "hasValidationError" : false,
                       "id" : "pbContainer",
                       "rows" : [
@@ -309,7 +309,7 @@
                               },
                               "label" : {
                                 "type" : "interpolation",
-                                "value" : "Monthly Cost"
+                                "value" : "Yearly Price"
                               },
                               "placeholder" : {
                                 "type" : "constant"
@@ -324,78 +324,14 @@
                               },
                               "value" : {
                                 "type" : "variable",
-                                "value" : "$item.monthlyCost"
+                                "value" : "$item.yearlyPrice"
                               },
                               "required" : {
                                 "type" : "constant",
-                                "value" : true
+                                "value" : false
                               }
                             },
-                            "reference" : "1bf364e0-c61e-4e12-aeb6-9511dacc280f",
-                            "hasValidationError" : false,
-                            "id" : "pbInput",
-                            "description" : ""
-                          }
-                        ],
-                        [
-                          {
-                            "type" : "component",
-                            "dimension" : {
-                              "md" : 12,
-                              "sm" : 12,
-                              "xs" : 12,
-                              "lg" : 12
-                            },
-                            "propertyValues" : {
-                              "labelHidden" : {
-                                "type" : "constant",
-                                "value" : false
-                              },
-                              "hidden" : {
-                                "type" : "constant",
-                                "value" : false
-                              },
-                              "labelPosition" : {
-                                "type" : "constant",
-                                "value" : "top"
-                              },
-                              "cssClasses" : {
-                                "type" : "constant",
-                                "value" : ""
-                              },
-                              "labelWidth" : {
-                                "type" : "constant",
-                                "value" : 1
-                              },
-                              "readOnly" : {
-                                "type" : "constant",
-                                "value" : false
-                              },
-                              "label" : {
-                                "type" : "interpolation",
-                                "value" : "Yearly Cost"
-                              },
-                              "placeholder" : {
-                                "type" : "constant"
-                              },
-                              "type" : {
-                                "type" : "constant",
-                                "value" : "number"
-                              },
-                              "dimension" : {
-                                "type" : "constant",
-                                "value" : 12
-                              },
-                              "value" : {
-                                "type" : "variable",
-                                "value" : "$item.yearlyCost"
-                              },
-                              "required" : {
-                                "type" : "constant",
-                                "value" : true
-                              }
-                            },
-                            "reference" : "373a624d-426e-4abf-85e0-e7d73a81d41b",
+                            "reference" : "976d3c1f-7410-4a7e-965c-74eaf0a804c5",
                             "hasValidationError" : false,
                             "id" : "pbInput",
                             "description" : ""
@@ -456,10 +392,10 @@
                               },
                               "required" : {
                                 "type" : "constant",
-                                "value" : true
+                                "value" : false
                               }
                             },
-                            "reference" : "903d9bb3-4ec5-4eab-bbf7-827453c029d3",
+                            "reference" : "9e759fa1-7272-4abd-8848-791dfbe30285",
                             "hasValidationError" : false,
                             "id" : "pbInput",
                             "description" : ""
@@ -537,7 +473,7 @@
                                 "value" : 12
                               }
                             },
-                            "reference" : "713d3036-e1d1-4334-8171-9158fa23498c",
+                            "reference" : "40fea046-d872-4d5b-8d25-c6f8b4a0ab37",
                             "hasValidationError" : false,
                             "id" : "pbButton",
                             "description" : ""
@@ -573,7 +509,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "<span class=\"glyphicon glyphicon-plus\"></span> Add OfferItem"
+                          "value" : "<span class=\"glyphicon glyphicon-plus\"></span> Add ContractItem"
                         },
                         "dataToSend" : {
                           "type" : "expression"
@@ -598,11 +534,11 @@
                         },
                         "collectionToModify" : {
                           "type" : "variable",
-                          "value" : "offer.items"
+                          "value" : "contract.contractItems"
                         },
                         "valueToAdd" : {
                           "type" : "expression",
-                          "value" : "{\r\n  \"persistenceId_string\" : \"\",\r\n  \"monthlyCost\" : 0,\r\n  \"yearlyCost\" : 0,\r\n  \"name\" : \"\"\r\n}"
+                          "value" : "{\r\n  \"persistenceId_string\" : \"\",\r\n  \"yearlyPrice\" : 0,\r\n  \"name\" : \"\"\r\n}"
                         },
                         "disabled" : {
                           "type" : "constant",
@@ -615,11 +551,99 @@
                         "dimension" : {
                           "type" : "constant",
                           "value" : 12
+                        },
+                        "assign" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "url" : {
+                          "type" : "interpolation"
+                        },
+                        "responseStatusCode" : {
+                          "type" : "variable"
+                        },
+                        "dataFromSuccess" : {
+                          "type" : "variable"
+                        },
+                        "closeOnSuccess" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "dataFromError" : {
+                          "type" : "variable"
+                        },
+                        "modalId" : {
+                          "type" : "constant",
+                          "value" : ""
                         }
                       },
-                      "reference" : "e9ba3533-37ed-4f61-9e7a-14110bd55ab1",
+                      "reference" : "69cef7e0-e3f1-4f99-89aa-c3e821212fa4",
                       "hasValidationError" : false,
                       "id" : "pbButton",
+                      "description" : ""
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 1
+                        },
+                        "readOnly" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Total Price"
+                        },
+                        "placeholder" : {
+                          "type" : "constant"
+                        },
+                        "type" : {
+                          "type" : "constant",
+                          "value" : "number"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "contract.totalPrice"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
+                        }
+                      },
+                      "reference" : "604929ee-116b-4303-a3b3-f242b8f27cf2",
+                      "hasValidationError" : false,
+                      "id" : "pbInput",
                       "description" : ""
                     }
                   ],
@@ -658,7 +682,7 @@
                           "value" : 12
                         }
                       },
-                      "reference" : "a1e35a09-7877-4fa7-9955-f2af6b47af1a",
+                      "reference" : "274eadec-4ee7-4e54-9747-2f70d55aa754",
                       "hasValidationError" : false,
                       "id" : "pbTitle",
                       "description" : ""
@@ -690,10 +714,71 @@
                           "value" : 12
                         }
                       },
-                      "reference" : "7c197abc-43fb-4800-97d9-3646ae13bd7f",
+                      "reference" : "fbfc307d-0986-467d-994f-10605ed3a1d2",
                       "hasValidationError" : false,
                       "id" : "pbContainer",
                       "rows" : [
+                        [
+                          {
+                            "type" : "component",
+                            "dimension" : {
+                              "md" : 12,
+                              "sm" : 12,
+                              "xs" : 12,
+                              "lg" : 12
+                            },
+                            "propertyValues" : {
+                              "labelHidden" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "hidden" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "labelPosition" : {
+                                "type" : "constant",
+                                "value" : "top"
+                              },
+                              "cssClasses" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "availableValues" : {
+                                "type" : "expression",
+                                "value" : "registrationRequest_query"
+                              },
+                              "labelWidth" : {
+                                "type" : "constant",
+                                "value" : 1
+                              },
+                              "label" : {
+                                "type" : "interpolation",
+                                "value" : "Government"
+                              },
+                              "placeholder" : {
+                                "type" : "constant",
+                                "value" : "Select a Government"
+                              },
+                              "dimension" : {
+                                "type" : "constant",
+                                "value" : 12
+                              },
+                              "value" : {
+                                "type" : "variable",
+                                "value" : "contract_government"
+                              },
+                              "required" : {
+                                "type" : "constant",
+                                "value" : true
+                              }
+                            },
+                            "reference" : "adc9349c-33d5-4e20-a2d9-d92959c6677f",
+                            "hasValidationError" : false,
+                            "id" : "pbSelect",
+                            "description" : ""
+                          }
+                        ],
                         [
                           {
                             "type" : "component",
@@ -714,7 +799,7 @@
                               },
                               "hidden" : {
                                 "type" : "expression",
-                                "value" : "!offer_government.name"
+                                "value" : "!contract_government.name"
                               },
                               "cssClasses" : {
                                 "type" : "constant",
@@ -726,7 +811,7 @@
                               },
                               "text" : {
                                 "type" : "interpolation",
-                                "value" : "{{offer_government.name}}"
+                                "value" : "{{contract_government.name}}"
                               },
                               "alignment" : {
                                 "type" : "constant",
@@ -737,7 +822,7 @@
                                 "value" : 12
                               }
                             },
-                            "reference" : "a0b4d83a-b4ad-4b0f-b09b-95f466257412",
+                            "reference" : "96c49207-a78a-47c7-bb6f-68dd980a19d2",
                             "hasValidationError" : false,
                             "id" : "pbText",
                             "description" : ""
@@ -778,7 +863,7 @@
                                 "value" : 12
                               }
                             },
-                            "reference" : "57ad890b-b275-4a31-bccc-d2fa10d59d1c",
+                            "reference" : "5ea1acda-9c94-4066-bfc5-fd3e5079e437",
                             "hasValidationError" : false,
                             "id" : "pbTitle",
                             "description" : ""
@@ -810,7 +895,7 @@
                                 "value" : 12
                               }
                             },
-                            "reference" : "be381e51-f0b5-4671-8d6d-df010bca699c",
+                            "reference" : "bbc9d382-efc2-492e-8a3d-9916dc37b7fc",
                             "hasValidationError" : false,
                             "id" : "pbContainer",
                             "rows" : [
@@ -834,7 +919,7 @@
                                     },
                                     "hidden" : {
                                       "type" : "expression",
-                                      "value" : "!offer_government_governmentLevel.name"
+                                      "value" : "!contract_government_governmentLevel.name"
                                     },
                                     "cssClasses" : {
                                       "type" : "constant",
@@ -846,7 +931,7 @@
                                     },
                                     "text" : {
                                       "type" : "interpolation",
-                                      "value" : "{{offer_government_governmentLevel.name}}"
+                                      "value" : "{{contract_government_governmentLevel.name}}"
                                     },
                                     "alignment" : {
                                       "type" : "constant",
@@ -857,7 +942,7 @@
                                       "value" : 12
                                     }
                                   },
-                                  "reference" : "020db9d0-d9c4-4a9d-91fd-9ae2abd3589d",
+                                  "reference" : "860b8bf9-63fe-43f7-9c25-e9d86db04b72",
                                   "hasValidationError" : false,
                                   "id" : "pbText",
                                   "description" : ""
@@ -886,7 +971,7 @@
                               },
                               "hidden" : {
                                 "type" : "expression",
-                                "value" : "!offer_government.place"
+                                "value" : "!contract_government.place"
                               },
                               "cssClasses" : {
                                 "type" : "constant",
@@ -898,7 +983,7 @@
                               },
                               "text" : {
                                 "type" : "interpolation",
-                                "value" : "{{offer_government.place}}"
+                                "value" : "{{contract_government.place}}"
                               },
                               "alignment" : {
                                 "type" : "constant",
@@ -909,7 +994,7 @@
                                 "value" : 12
                               }
                             },
-                            "reference" : "af9776a1-0885-455c-9490-7df609c54f29",
+                            "reference" : "1f479864-8ee6-4615-93a2-7f73d41bb829",
                             "hasValidationError" : false,
                             "id" : "pbText",
                             "description" : ""
@@ -935,7 +1020,7 @@
                               },
                               "hidden" : {
                                 "type" : "expression",
-                                "value" : "!offer_government.postalCode"
+                                "value" : "!contract_government.postalCode"
                               },
                               "cssClasses" : {
                                 "type" : "constant",
@@ -947,7 +1032,7 @@
                               },
                               "text" : {
                                 "type" : "interpolation",
-                                "value" : "{{offer_government.postalCode}}"
+                                "value" : "{{contract_government.postalCode}}"
                               },
                               "alignment" : {
                                 "type" : "constant",
@@ -958,7 +1043,7 @@
                                 "value" : 12
                               }
                             },
-                            "reference" : "57b50756-e240-41ff-8655-04b151f45b59",
+                            "reference" : "fa79ff13-3abf-4ab6-9499-1c0d13b8eed2",
                             "hasValidationError" : false,
                             "id" : "pbText",
                             "description" : ""
@@ -984,7 +1069,7 @@
                               },
                               "hidden" : {
                                 "type" : "expression",
-                                "value" : "!offer_government.numberOfUsers"
+                                "value" : "!contract_government.numberOfUsers"
                               },
                               "cssClasses" : {
                                 "type" : "constant",
@@ -996,7 +1081,7 @@
                               },
                               "text" : {
                                 "type" : "interpolation",
-                                "value" : "{{offer_government.numberOfUsers}}"
+                                "value" : "{{contract_government.numberOfUsers}}"
                               },
                               "alignment" : {
                                 "type" : "constant",
@@ -1007,7 +1092,7 @@
                                 "value" : 12
                               }
                             },
-                            "reference" : "fae7724d-3f63-4a64-8579-47b49e65a280",
+                            "reference" : "8025a3a9-d1d7-4c08-9f90-da1878599fc6",
                             "hasValidationError" : false,
                             "id" : "pbText",
                             "description" : ""
@@ -1033,7 +1118,7 @@
                               },
                               "hidden" : {
                                 "type" : "expression",
-                                "value" : "!offer_government.email"
+                                "value" : "!contract_government.email"
                               },
                               "cssClasses" : {
                                 "type" : "constant",
@@ -1045,7 +1130,7 @@
                               },
                               "text" : {
                                 "type" : "interpolation",
-                                "value" : "{{offer_government.email}}"
+                                "value" : "{{contract_government.email}}"
                               },
                               "alignment" : {
                                 "type" : "constant",
@@ -1056,7 +1141,7 @@
                                 "value" : 12
                               }
                             },
-                            "reference" : "e4346d08-b602-4de9-80a1-3870103ca8b9",
+                            "reference" : "66ffb017-34c6-44ae-bb45-7fc1cb667753",
                             "hasValidationError" : false,
                             "id" : "pbText",
                             "description" : ""
@@ -1078,7 +1163,7 @@
                               },
                               "hidden" : {
                                 "type" : "expression",
-                                "value" : "!offer_government.isLawOverviewMandatory"
+                                "value" : "!contract_government.isLawOverviewMandatory"
                               },
                               "cssClasses" : {
                                 "type" : "constant",
@@ -1098,10 +1183,10 @@
                               },
                               "value" : {
                                 "type" : "variable",
-                                "value" : "offer_government.isLawOverviewMandatory"
+                                "value" : "contract_government.isLawOverviewMandatory"
                               }
                             },
-                            "reference" : "4a48e4ed-0f37-4b78-ada2-cf1ffaa52498",
+                            "reference" : "317454fb-b2cf-4bf9-b173-fd8eccefb52d",
                             "hasValidationError" : false,
                             "id" : "pbCheckbox",
                             "description" : ""
@@ -1127,7 +1212,7 @@
                               },
                               "hidden" : {
                                 "type" : "expression",
-                                "value" : "!offer_government.status"
+                                "value" : "!contract_government.status"
                               },
                               "cssClasses" : {
                                 "type" : "constant",
@@ -1139,7 +1224,7 @@
                               },
                               "text" : {
                                 "type" : "interpolation",
-                                "value" : "{{offer_government.status}}"
+                                "value" : "{{contract_government.status}}"
                               },
                               "alignment" : {
                                 "type" : "constant",
@@ -1150,13 +1235,317 @@
                                 "value" : 12
                               }
                             },
-                            "reference" : "2dde8cc2-75df-4dd7-a71f-b689ef8c7e16",
+                            "reference" : "e7fb1cc7-97ed-46db-b782-78790865b752",
                             "hasValidationError" : false,
                             "id" : "pbText",
                             "description" : ""
                           }
                         ]
                       ]
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "disabled" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Government Signature"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "contract.governmentSignature"
+                        }
+                      },
+                      "reference" : "36f7924f-e370-40ee-aeb7-b847e71a003c",
+                      "hasValidationError" : false,
+                      "id" : "pbCheckbox",
+                      "description" : ""
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "disabled" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Agency Signature"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "contract.agencySignature"
+                        }
+                      },
+                      "reference" : "8ee9cc19-a5cf-40f7-af5f-b3084b87d8a7",
+                      "hasValidationError" : false,
+                      "id" : "pbCheckbox",
+                      "description" : ""
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "level" : {
+                          "type" : "constant",
+                          "value" : "Level 4"
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "text" : {
+                          "type" : "interpolation",
+                          "value" : "Comments"
+                        },
+                        "alignment" : {
+                          "type" : "constant",
+                          "value" : "left"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        }
+                      },
+                      "reference" : "4eb4b20b-a756-4721-ac7e-bc81d741fc83",
+                      "hasValidationError" : false,
+                      "id" : "pbTitle",
+                      "description" : ""
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "container",
+                      "dimension" : {
+                        "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "repeatedCollection" : {
+                          "type" : "variable",
+                          "value" : "contract_comments"
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        }
+                      },
+                      "reference" : "56cae204-3545-4a08-a032-c6f35784bc28",
+                      "hasValidationError" : false,
+                      "id" : "pbContainer",
+                      "rows" : [
+                        [
+                          {
+                            "type" : "component",
+                            "dimension" : {
+                              "md" : 12,
+                              "sm" : 12,
+                              "xs" : 12,
+                              "lg" : 12
+                            },
+                            "propertyValues" : {
+                              "allowHtml" : {
+                                "type" : "constant",
+                                "value" : true
+                              },
+                              "labelHidden" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "hidden" : {
+                                "type" : "expression",
+                                "value" : "!$item.text"
+                              },
+                              "cssClasses" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "label" : {
+                                "type" : "interpolation",
+                                "value" : "Text"
+                              },
+                              "text" : {
+                                "type" : "interpolation",
+                                "value" : "{{$item.text}}"
+                              },
+                              "alignment" : {
+                                "type" : "constant",
+                                "value" : "left"
+                              },
+                              "dimension" : {
+                                "type" : "constant",
+                                "value" : 12
+                              }
+                            },
+                            "reference" : "de232f62-99c1-4879-9709-82e5c26c698d",
+                            "hasValidationError" : false,
+                            "id" : "pbText",
+                            "description" : ""
+                          }
+                        ]
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "disabled" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Is Paid"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "contract.isPaid"
+                        }
+                      },
+                      "reference" : "7884fcf1-3fa7-4f6a-8eac-c56ff277dc6e",
+                      "hasValidationError" : false,
+                      "id" : "pbCheckbox",
+                      "description" : ""
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "disabled" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Is Accepted"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "contract.isAccepted"
+                        }
+                      },
+                      "reference" : "fbad3e22-7e2c-42d3-8f4e-bc3869c0e503",
+                      "hasValidationError" : false,
+                      "id" : "pbCheckbox",
+                      "description" : ""
                     }
                   ]
                 ]
@@ -1237,7 +1626,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "9dc401ac-ea27-4247-9897-7fdb14b4f740",
+                "reference" : "89e350e5-0360-49c5-a649-e9d3b2cd0a8f",
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
@@ -1289,7 +1678,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "656de888-cee7-47e2-a054-e77d5b838e86",
+                "reference" : "b037de36-b8f9-44d3-8c6c-2c74db988dd1",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
@@ -1301,13 +1690,6 @@
     ]
   ],
   "variables" : {
-    "offer" : {
-      "type" : "url",
-      "value" : [
-        "../{{context.offer_ref.link}}"
-      ],
-      "exposed" : false
-    },
     "task" : {
       "type" : "url",
       "value" : [
@@ -1315,10 +1697,17 @@
       ],
       "exposed" : false
     },
-    "offer_government" : {
+    "contract_comments" : {
+      "type" : "json",
+      "value" : [
+        "[]"
+      ],
+      "exposed" : false
+    },
+    "contract_government_governmentLevel" : {
       "type" : "url",
       "value" : [
-        "../{{context.registerRequest_ref.link}}"
+        "{{contract_government|lazyRef:'governmentLevel'}}"
       ],
       "exposed" : false
     },
@@ -1340,33 +1729,37 @@
     "formOutput" : {
       "type" : "expression",
       "value" : [
-        "if( $data.offer && $data.offer_government && $data.offer_government_governmentLevel ){",
+        "if( $data.contract && $data.contract_government && $data.contract_government_governmentLevel && $data.contract_comments ){",
         "\t//attach lazy references variables to parent variables",
-        "\t$data.offer.government = $data.offer_government;",
-        "\t$data.offer.government.governmentLevel = $data.offer_government_governmentLevel;",
+        "\t$data.contract.government = $data.contract_government;",
+        "\t$data.contract.government.governmentLevel = $data.contract_government_governmentLevel;",
+        "\t$data.contract.comments = $data.contract_comments;",
         "\treturn {",
-        "\t\t//map offer variable to expected task contract input",
-        "\t\tofferInput: {",
-        "\t\t\titems: $data.offer.items.map( it => ({",
+        "\t\t//map contract variable to expected task contract input",
+        "\t\tcontractInput: {",
+        "\t\t\tcontractItems: $data.contract.contractItems.map( it => ({",
         "\t\t\t\tpersistenceId_string: it.persistenceId_string !== undefined ? it.persistenceId_string : null,",
-        "\t\t\t\tmonthlyCost: it.monthlyCost !== undefined ? it.monthlyCost : null,",
-        "\t\t\t\tyearlyCost: it.yearlyCost !== undefined ? it.yearlyCost : null,",
+        "\t\t\t\tyearlyPrice: it.yearlyPrice !== undefined ? it.yearlyPrice : null,",
         "\t\t\t\tname: it.name !== undefined ? it.name : null",
         "\t\t\t})),",
-        "\t\t\tgovernment: $data.offer.government ? {",
-        "\t\t\t\tpersistenceId_string: $data.offer.government.persistenceId_string !== undefined ? $data.offer.government.persistenceId_string : null",
+        "\t\t\ttotalPrice: $data.contract.totalPrice !== undefined ? $data.contract.totalPrice : null,",
+        "\t\t\tgovernment: $data.contract.government ? {",
+        "\t\t\t\tpersistenceId_string: $data.contract.government.persistenceId_string !== undefined ? $data.contract.government.persistenceId_string : null",
         "\t\t\t} : null,",
-        "\t\t\tisAccepted: $data.offer.isAccepted !== undefined ? $data.offer.isAccepted : null",
+        "\t\t\tgovernmentSignature: $data.contract.governmentSignature !== undefined ? $data.contract.governmentSignature : null,",
+        "\t\t\tagencySignature: $data.contract.agencySignature !== undefined ? $data.contract.agencySignature : null,",
+        "\t\t\tisPaid: $data.contract.isPaid !== undefined ? $data.contract.isPaid : null,",
+        "\t\t\tisAccepted: $data.contract.isAccepted !== undefined ? $data.contract.isAccepted : null",
         "\t\t}",
         "\t}",
         "}"
       ],
       "exposed" : false
     },
-    "offer_government_governmentLevel" : {
+    "contract" : {
       "type" : "url",
       "value" : [
-        "{{offer_government|lazyRef:'governmentLevel'}}"
+        "../{{context.contract_ref.link}}"
       ],
       "exposed" : false
     },
@@ -1377,10 +1770,17 @@
       ],
       "exposed" : false
     },
+    "contract_government" : {
+      "type" : "url",
+      "value" : [
+        "{{contract|lazyRef:'government'}}"
+      ],
+      "exposed" : false
+    },
     "registrationRequest_query" : {
       "type" : "url",
       "value" : [
-        "../{{context.registerRequest_ref.link}}"
+        "../API/bdm/businessData/com.upp.model.RegistrationRequest?q=find&p=0&c=99"
       ],
       "exposed" : false
     },
@@ -1394,16 +1794,16 @@
   },
   "assets" : [
     {
-      "id" : "6a0900ea-1d8f-4f2b-881e-86eedf73d5a6",
-      "name" : "style.css",
-      "type" : "css",
+      "id" : "35cffb97-6972-4f8e-951a-0e638ca87025",
+      "name" : "localization.json",
+      "type" : "json",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "7a7e36d0-7d12-4227-9861-5b1d932358d5",
-      "name" : "localization.json",
-      "type" : "json",
+      "id" : "c1143b46-f2ed-46a8-b997-31d2e7c5b4ec",
+      "name" : "style.css",
+      "type" : "css",
       "order" : 0,
       "external" : false
     }
