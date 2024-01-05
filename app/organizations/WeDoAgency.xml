@@ -107,6 +107,17 @@
       <password encrypted="false">bpm</password>
       <customUserInfoValues/>
     </user>
+    <user userName="djorjde">
+      <firstName>Djordje</firstName>
+      <lastName>Vuckovic</lastName>
+      <manager>omaralfarsi</manager>
+      <personalData/>
+      <professionalData>
+        <email>djordje@gmail.com</email>
+      </professionalData>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
   </users>
   <roles>
     <role name="Member">
@@ -215,6 +226,12 @@
       <roleName>Member</roleName>
       <groupName> Attorneys</groupName>
       <groupParentPath>/agency/Attorneys</groupParentPath>
+    </membership>
+    <membership>
+      <userName>djorjde</userName>
+      <roleName>Member</roleName>
+      <groupName>Employees</groupName>
+      <groupParentPath>/agency/Department</groupParentPath>
     </membership>
   </memberships>
 </organization:Organization>
