@@ -1100,7 +1100,7 @@
         <defaultValue xmi:type="expression:Expression" xmi:id="_EzUfEawAEe6zebJTYPSYaA" name="" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object"/>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_2TPoZJIKEe6ETJDNpyFByQ">
-        <targetForm xmi:type="expression:Expression" xmi:id="_gsVKJKv8Ee6zebJTYPSYaA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_OKatIKwHEe6X6ojziS-Osg" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_2TPoZpIKEe6ETJDNpyFByQ">
         <targetForm xmi:type="expression:Expression" xmi:id="_2TPoZ5IKEe6ETJDNpyFByQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
@@ -1257,7 +1257,14 @@
           </actorMapping>
         </actorMappings>
         <definitionMappings xmi:type="configuration:DefinitionMapping" xmi:id="_u0930KtDEe6wJsJzyj3tNw" type="ACTOR_FILTER" definitionId="bonita-actorfilter-single-user" definitionVersion="1.0.0" implementationId="bonita-actorfilter-single-user-impl" implementationVersion="1.0.0"/>
-        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_dlp-oZW3Ee67AZRuP5tRmg" id="CONNECTOR"/>
+        <definitionMappings xmi:type="configuration:DefinitionMapping" xmi:id="_mUcdoKwGEe6X6ojziS-Osg" type="CONNECTOR" definitionId="email" definitionVersion="1.2.0" implementationId="email-impl" implementationVersion="1.4.1"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_dlp-oZW3Ee67AZRuP5tRmg" id="CONNECTOR">
+          <children xmi:type="configuration:FragmentContainer" xmi:id="_mVyhcKwGEe6X6ojziS-Osg" id="email-impl-1.4.1">
+            <fragments xmi:type="configuration:Fragment" xmi:id="_mV0WoKwGEe6X6ojziS-Osg" key="email-impl -- 1.4.1" value="bonita-connector-email-1.4.1.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_mV0WoawGEe6X6ojziS-Osg" key="email-impl -- 1.4.1" value="jakarta.mail-1.6.7.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_mV09sKwGEe6X6ojziS-Osg" key="email-impl -- 1.4.1" value="jakarta.mail-api-1.6.7.jar" type="CONNECTOR"/>
+          </children>
+        </processDependencies>
         <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_dlp-opW3Ee67AZRuP5tRmg" id="GROOVY_SCRIPT"/>
         <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_dlp-o5W3Ee67AZRuP5tRmg" id="ACTOR_FILTER">
           <children xmi:type="configuration:FragmentContainer" xmi:id="_99N-cKtFEe6T5IgaWvsc7g" id="bonita-actorfilter-single-user-impl-1.0.0">
