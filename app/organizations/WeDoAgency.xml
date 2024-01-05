@@ -89,6 +89,24 @@
       <password encrypted="false">bpm</password>
       <customUserInfoValues/>
     </user>
+    <user userName="us1">
+      <manager>avasmith</manager>
+      <personalData/>
+      <professionalData>
+        <email>us1@gmail.com</email>
+      </professionalData>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="ag1">
+      <manager>Ivana Lazarevic</manager>
+      <personalData/>
+      <professionalData>
+        <email>ag1@gmail.com</email>
+      </professionalData>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
   </users>
   <roles>
     <role name="Member">
@@ -185,6 +203,18 @@
       <roleName>Member</roleName>
       <groupName>Employees</groupName>
       <groupParentPath>/agency/Department</groupParentPath>
+    </membership>
+    <membership>
+      <userName>us1</userName>
+      <roleName>Member</roleName>
+      <groupName>StandardEmployees</groupName>
+      <groupParentPath>/goverment/Employees</groupParentPath>
+    </membership>
+    <membership>
+      <userName>ag1</userName>
+      <roleName>Member</roleName>
+      <groupName> Attorneys</groupName>
+      <groupParentPath>/agency/Attorneys</groupParentPath>
     </membership>
   </memberships>
 </organization:Organization>
