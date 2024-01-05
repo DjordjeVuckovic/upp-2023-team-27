@@ -957,10 +957,20 @@
           </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_3AYo7JIPEe6ETJDNpyFByQ" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
-        <elements xmi:type="process:ScriptTask" xmi:id="_QRY9oJIREe6ETJDNpyFByQ" name="Create user" outgoing="_SeqFMJUsEe6yPaB41LqcJQ" incoming="_SQPP8JIREe6ETJDNpyFByQ">
+        <elements xmi:type="process:ScriptTask" xmi:id="_QRY9oJIREe6ETJDNpyFByQ" name="Create goverment user" outgoing="_SeqFMJUsEe6yPaB41LqcJQ" incoming="_SQPP8JIREe6ETJDNpyFByQ">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_QRY9opIREe6ETJDNpyFByQ" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_QRY9oZIREe6ETJDNpyFByQ" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_QRY9o5IREe6ETJDNpyFByQ" name="" content="" returnTypeFixed="true"/>
+          <operations xmi:type="expression:Operation" xmi:id="_vTcmsKwLEe6nXr03pof0bQ">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_vTcmsawLEe6nXr03pof0bQ" name="goverment" content="goverment" type="TYPE_VARIABLE" returnType="com.upp.model.Government">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_xwsFMKwLEe6nXr03pof0bQ" name="goverment" dataType="_2TPohJIKEe6ETJDNpyFByQ" className="com.upp.model.Government"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_vTcmsqwLEe6nXr03pof0bQ" name="newScript()" content="import com.upp.model.Government&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;def gov = new Government();&#xD;&#xA;def email = registerRequest.getEmail();&#xD;&#xA;gov.setEmail(email);&#xD;&#xA;gov.setGovernmentType(registerRequest.governmentLevel.name);&#xD;&#xA;gov.setIsLawOverviewMandatory(registerRequest.isLawOverviewMandatory);&#xD;&#xA;gov.setName(registerRequest.name);&#xD;&#xA;gov.setPassword(&quot;bpm&quot;);&#xD;&#xA;gov.setNumberOfUsers(registerRequest.getNumberOfUsers());&#xD;&#xA;gov.setPlace(registerRequest.getPlace());&#xD;&#xA;gov.setPostalCode(registerRequest.getPostalCode());&#xD;&#xA;gov.setUsername(email);&#xD;&#xA;&#xD;&#xA;def userNew = apiAccessor.getIdentityAPI().createUser(email, &quot;bpm&quot;);&#xD;&#xA;def group = apiAccessor.getIdentityAPI().getGroupByPath(&quot;/goverment/Employees/StandardEmployees&quot;);&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;return gov;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.upp.model.Government">
+              <referencedElements xmi:type="expression:Expression" xmi:id="_trPA0KwNEe6nXr03pof0bQ" name="apiAccessor" content="apiAccessor" type="TYPE_ENGINE_CONSTANT" returnType="org.bonitasoft.engine.api.APIAccessor"/>
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_trPA0awNEe6nXr03pof0bQ" name="registerRequest" dataType="_2TPohJIKEe6ETJDNpyFByQ" className="com.upp.model.RegistrationRequest"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_vTcms6wLEe6nXr03pof0bQ" type="ASSIGNMENT"/>
+          </operations>
           <loopCondition xmi:type="expression:Expression" xmi:id="_QRY9pJIREe6ETJDNpyFByQ" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <loopMaximum xmi:type="expression:Expression" xmi:id="_QRY9pZIREe6ETJDNpyFByQ" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_QRY9ppIREe6ETJDNpyFByQ" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
