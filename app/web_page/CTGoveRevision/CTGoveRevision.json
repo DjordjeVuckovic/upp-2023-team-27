@@ -1,10 +1,10 @@
 {
-  "id" : "CTAgencyApproval",
-  "name" : "CTAgencyApproval",
+  "id" : "CTGoveRevision",
+  "name" : "CTGoveRevision",
   "type" : "form",
-  "uuid" : "73cb77fd-1bea-454b-9fe0-008eda3c314a",
+  "uuid" : "e2235f02-082c-40c4-89b6-04d1d3d3e2dc",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1704467624107,
+  "lastUpdate" : 1704465837383,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -14,7 +14,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "c0abd7a9-6e0e-42d0-a95b-0376ac033b5c",
+        "reference" : "aabdbffc-9eb4-4662-9178-7e414f76aa5b",
         "hasValidationError" : false,
         "id" : "pbContainer",
         "rows" : [
@@ -53,7 +53,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "7bcfcba0-5a05-4613-b0d2-d31dd00ac24b",
+              "reference" : "d8b14819-0397-423a-9c89-0ec80e62968e",
               "hasValidationError" : false,
               "id" : "pbTitle",
               "description" : ""
@@ -101,7 +101,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "b7213004-9881-4e68-be68-e2143630e257",
+              "reference" : "ca01e96f-847e-4517-904f-f574b8804853",
               "hasValidationError" : false,
               "id" : "pbText",
               "description" : ""
@@ -116,17 +116,8 @@
         "dimension" : {
           "xs" : 12
         },
-        "propertyValues" : {
-          "cssClasses" : {
-            "type" : "constant",
-            "value" : ""
-          },
-          "hidden" : {
-            "type" : "constant",
-            "value" : false
-          }
-        },
-        "reference" : "42ce1673-9f27-474b-baf6-131b622834b9",
+        "propertyValues" : { },
+        "reference" : "787c7a9e-706f-4a7e-adc6-545e56911dbc",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -135,105 +126,13 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "dea70a28-eaa1-44ae-ab89-bd3b09a6b55f",
+          "reference" : "f10e21e6-9f39-4ff4-94ee-cb56d789dd77",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
             [
               {
-                "type" : "component",
-                "dimension" : {
-                  "xs" : 12,
-                  "sm" : 12,
-                  "md" : 12,
-                  "lg" : 12
-                },
-                "propertyValues" : {
-                  "cssClasses" : {
-                    "type" : "constant",
-                    "value" : ""
-                  },
-                  "hidden" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "allowHTML" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "text" : {
-                    "type" : "interpolation",
-                    "value" : "Agency Employee Answer"
-                  },
-                  "level" : {
-                    "type" : "constant",
-                    "value" : "Level 2"
-                  },
-                  "alignment" : {
-                    "type" : "constant",
-                    "value" : "left"
-                  }
-                },
-                "reference" : "67b01835-d3e3-4f93-a1c5-2839f762854f",
-                "hasValidationError" : false,
-                "id" : "pbTitle"
-              }
-            ],
-            [
-              {
-                "type" : "component",
-                "dimension" : {
-                  "xs" : 12,
-                  "sm" : 12,
-                  "md" : 12,
-                  "lg" : 12
-                },
-                "propertyValues" : {
-                  "cssClasses" : {
-                    "type" : "constant",
-                    "value" : ""
-                  },
-                  "hidden" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "allowHTML" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "labelHidden" : {
-                    "type" : "constant",
-                    "value" : true
-                  },
-                  "label" : {
-                    "type" : "interpolation",
-                    "value" : "Default label"
-                  },
-                  "labelPosition" : {
-                    "type" : "constant",
-                    "value" : "top"
-                  },
-                  "labelWidth" : {
-                    "type" : "constant",
-                    "value" : 4
-                  },
-                  "text" : {
-                    "type" : "interpolation",
-                    "value" : "{{answer.text}}"
-                  },
-                  "alignment" : {
-                    "type" : "constant",
-                    "value" : "left"
-                  }
-                },
-                "reference" : "314311a4-3c3c-4014-b83c-9c166af89017",
-                "hasValidationError" : false,
-                "id" : "pbText"
-              }
-            ],
-            [
-              {
-                "type" : "component",
+                "type" : "container",
                 "dimension" : {
                   "md" : 12,
                   "sm" : 12,
@@ -241,9 +140,8 @@
                   "lg" : 12
                 },
                 "propertyValues" : {
-                  "labelHidden" : {
-                    "type" : "constant",
-                    "value" : false
+                  "repeatedCollection" : {
+                    "type" : "variable"
                   },
                   "hidden" : {
                     "type" : "constant",
@@ -252,36 +150,167 @@
                   "cssClasses" : {
                     "type" : "constant",
                     "value" : ""
-                  },
-                  "disabled" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "label" : {
-                    "type" : "interpolation",
-                    "value" : "Is Approved"
                   },
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
-                  },
-                  "value" : {
-                    "type" : "variable",
-                    "value" : "formInput.isApproved"
-                  },
-                  "required" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "allowHTML" : {
-                    "type" : "constant",
-                    "value" : false
                   }
                 },
-                "reference" : "d8c26319-f375-4a8a-bc04-cbde06ee581f",
+                "reference" : "03993e56-c678-4e94-90e4-988b28a626a7",
                 "hasValidationError" : false,
-                "id" : "pbCheckbox",
-                "description" : ""
+                "id" : "pbContainer",
+                "rows" : [
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "level" : {
+                          "type" : "constant",
+                          "value" : "Level 4"
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "text" : {
+                          "type" : "interpolation",
+                          "value" : "Goverment Employee Answer"
+                        },
+                        "alignment" : {
+                          "type" : "constant",
+                          "value" : "left"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
+                        }
+                      },
+                      "reference" : "1263b2e8-64c6-4d98-a300-b3d3bd1f7fb5",
+                      "hasValidationError" : false,
+                      "id" : "pbTitle",
+                      "description" : ""
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "xs" : 12,
+                        "sm" : 12,
+                        "md" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Default label"
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
+                        },
+                        "text" : {
+                          "type" : "interpolation",
+                          "value" : "{{answerGoverment.text}}"
+                        },
+                        "alignment" : {
+                          "type" : "constant",
+                          "value" : "left"
+                        }
+                      },
+                      "reference" : "f11d3428-7aae-4628-84fb-6572f8356bc0",
+                      "hasValidationError" : false,
+                      "id" : "pbText"
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "disabled" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Is Approved Input"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "formInput.isApprovedInput"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
+                        }
+                      },
+                      "reference" : "df2fdda4-2da3-4dd2-93e5-c8accbbd5c67",
+                      "hasValidationError" : false,
+                      "id" : "pbCheckbox",
+                      "description" : ""
+                    }
+                  ]
+                ]
               }
             ],
             [
@@ -359,7 +388,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "2a203572-d0f2-49ae-88d3-17391ace7a20",
+                "reference" : "8166c9f8-4155-41f6-860f-bc630140afca",
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
@@ -411,7 +440,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "e0940b17-cfe0-4829-8cb3-b89c329b66d6",
+                "reference" : "98f5fe4f-5dcc-4e56-9eaf-a24eae1b0777",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
@@ -434,8 +463,15 @@
       "type" : "json",
       "value" : [
         "{\r",
-        "  \"isApproved\" : false\r",
+        "  \"isApprovedInput\" : false\r",
         "}"
+      ],
+      "exposed" : false
+    },
+    "answerGoverment" : {
+      "type" : "url",
+      "value" : [
+        "../{{context.answerGoverment_ref.link}}"
       ],
       "exposed" : false
     },
@@ -457,8 +493,14 @@
     "formOutput" : {
       "type" : "expression",
       "value" : [
-        "return {",
-        "\tisApproved: $data.formInput.isApproved",
+        "if( $data.answerGoverment ){",
+        "\treturn {",
+        "\t\tisApprovedInput: $data.formInput.isApprovedInput,",
+        "\t\t//map answerGoverment variable to expected task contract input",
+        "\t\tanswerGovermentInput: {",
+        "\t\t\ttext: $data.answerGoverment.text !== undefined ? $data.answerGoverment.text : null",
+        "\t\t}",
+        "\t}",
         "}"
       ],
       "exposed" : false
@@ -476,27 +518,20 @@
         "id"
       ],
       "exposed" : false
-    },
-    "answer" : {
-      "type" : "url",
-      "value" : [
-        "../{{context.answerAgency_ref.link}}"
-      ],
-      "exposed" : false
     }
   },
   "assets" : [
     {
-      "id" : "d4dcf78a-cddd-46dc-8fce-afb24408f0c4",
-      "name" : "style.css",
-      "type" : "css",
+      "id" : "ee95a525-b319-4c56-9192-f8429b873d75",
+      "name" : "localization.json",
+      "type" : "json",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "40a1a27f-2c2d-44c1-b0df-5c1b1885ed56",
-      "name" : "localization.json",
-      "type" : "json",
+      "id" : "1d146343-84c8-4b01-a59f-163322825657",
+      "name" : "style.css",
+      "type" : "css",
       "order" : 0,
       "external" : false
     }

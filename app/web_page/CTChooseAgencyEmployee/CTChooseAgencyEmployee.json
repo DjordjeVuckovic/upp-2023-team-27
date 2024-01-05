@@ -1,10 +1,10 @@
 {
-  "id" : "CTAgencyApproval",
-  "name" : "CTAgencyApproval",
+  "id" : "CTChooseAgencyEmployee",
+  "name" : "CTChooseAgencyEmployee",
   "type" : "form",
-  "uuid" : "73cb77fd-1bea-454b-9fe0-008eda3c314a",
+  "uuid" : "dfe6e8ac-2e60-4c09-a358-fbbfc12b2156",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1704467624107,
+  "lastUpdate" : 1704482472626,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -14,7 +14,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "c0abd7a9-6e0e-42d0-a95b-0376ac033b5c",
+        "reference" : "6f3732af-3b4a-4451-8be4-fcbaa585da70",
         "hasValidationError" : false,
         "id" : "pbContainer",
         "rows" : [
@@ -53,7 +53,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "7bcfcba0-5a05-4613-b0d2-d31dd00ac24b",
+              "reference" : "f682fbef-f401-4d56-b1e6-8c2dbce7cb4d",
               "hasValidationError" : false,
               "id" : "pbTitle",
               "description" : ""
@@ -101,7 +101,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "b7213004-9881-4e68-be68-e2143630e257",
+              "reference" : "840c43cd-098f-4701-a323-b3c3b5387f4b",
               "hasValidationError" : false,
               "id" : "pbText",
               "description" : ""
@@ -116,17 +116,8 @@
         "dimension" : {
           "xs" : 12
         },
-        "propertyValues" : {
-          "cssClasses" : {
-            "type" : "constant",
-            "value" : ""
-          },
-          "hidden" : {
-            "type" : "constant",
-            "value" : false
-          }
-        },
-        "reference" : "42ce1673-9f27-474b-baf6-131b622834b9",
+        "propertyValues" : { },
+        "reference" : "6836b61a-4870-427b-9bd3-ae1aca1a8d0f",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -135,7 +126,7 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "dea70a28-eaa1-44ae-ab89-bd3b09a6b55f",
+          "reference" : "495ad2af-13c4-4d6b-a304-83e164f9867a",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
@@ -143,9 +134,9 @@
               {
                 "type" : "component",
                 "dimension" : {
-                  "xs" : 12,
-                  "sm" : 12,
                   "md" : 12,
+                  "sm" : 12,
+                  "xs" : 12,
                   "lg" : 12
                 },
                 "propertyValues" : {
@@ -157,26 +148,57 @@
                     "type" : "constant",
                     "value" : false
                   },
+                  "disabled" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "required" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
                   "allowHTML" : {
                     "type" : "constant",
                     "value" : false
                   },
-                  "text" : {
+                  "labelHidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "label" : {
                     "type" : "interpolation",
-                    "value" : "Agency Employee Answer"
+                    "value" : "Choosen User"
                   },
-                  "level" : {
+                  "labelPosition" : {
                     "type" : "constant",
-                    "value" : "Level 2"
+                    "value" : "top"
                   },
-                  "alignment" : {
+                  "labelWidth" : {
                     "type" : "constant",
-                    "value" : "left"
+                    "value" : 1
+                  },
+                  "placeholder" : {
+                    "type" : "interpolation"
+                  },
+                  "availableValues" : {
+                    "type" : "expression",
+                    "value" : "agencyUsers"
+                  },
+                  "displayedKey" : {
+                    "type" : "constant",
+                    "value" : "userName"
+                  },
+                  "returnedKey" : {
+                    "type" : "constant",
+                    "value" : "id"
+                  },
+                  "value" : {
+                    "type" : "variable",
+                    "value" : "formInput.choosenUserId"
                   }
                 },
-                "reference" : "67b01835-d3e3-4f93-a1c5-2839f762854f",
+                "reference" : "19f90e12-49f4-4a3a-9162-398f367c51fb",
                 "hasValidationError" : false,
-                "id" : "pbTitle"
+                "id" : "pbSelect"
               }
             ],
             [
@@ -219,69 +241,16 @@
                   },
                   "text" : {
                     "type" : "interpolation",
-                    "value" : "{{answer.text}}"
+                    "value" : "Group Name: {{groupId[0].displayName}}"
                   },
                   "alignment" : {
                     "type" : "constant",
                     "value" : "left"
                   }
                 },
-                "reference" : "314311a4-3c3c-4014-b83c-9c166af89017",
+                "reference" : "cf3a81ef-dd37-47ae-b6ca-5da16eaeedda",
                 "hasValidationError" : false,
                 "id" : "pbText"
-              }
-            ],
-            [
-              {
-                "type" : "component",
-                "dimension" : {
-                  "md" : 12,
-                  "sm" : 12,
-                  "xs" : 12,
-                  "lg" : 12
-                },
-                "propertyValues" : {
-                  "labelHidden" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "hidden" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "cssClasses" : {
-                    "type" : "constant",
-                    "value" : ""
-                  },
-                  "disabled" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "label" : {
-                    "type" : "interpolation",
-                    "value" : "Is Approved"
-                  },
-                  "dimension" : {
-                    "type" : "constant",
-                    "value" : 12
-                  },
-                  "value" : {
-                    "type" : "variable",
-                    "value" : "formInput.isApproved"
-                  },
-                  "required" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "allowHTML" : {
-                    "type" : "constant",
-                    "value" : false
-                  }
-                },
-                "reference" : "d8c26319-f375-4a8a-bc04-cbde06ee581f",
-                "hasValidationError" : false,
-                "id" : "pbCheckbox",
-                "description" : ""
               }
             ],
             [
@@ -359,7 +328,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "2a203572-d0f2-49ae-88d3-17391ace7a20",
+                "reference" : "10a5fabc-4599-4386-a880-15c10544e497",
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
@@ -411,7 +380,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "e0940b17-cfe0-4829-8cb3-b89c329b66d6",
+                "reference" : "33063721-386c-45d5-b74a-e4a1d2ddc25a",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
@@ -434,7 +403,7 @@
       "type" : "json",
       "value" : [
         "{\r",
-        "  \"isApproved\" : false\r",
+        "  \"choosenUserId\" : 0\r",
         "}"
       ],
       "exposed" : false
@@ -458,7 +427,7 @@
       "type" : "expression",
       "value" : [
         "return {",
-        "\tisApproved: $data.formInput.isApproved",
+        "\tchoosenUserId: $data.formInput.choosenUserId",
         "}"
       ],
       "exposed" : false
@@ -477,26 +446,33 @@
       ],
       "exposed" : false
     },
-    "answer" : {
+    "agencyUsers" : {
       "type" : "url",
       "value" : [
-        "../{{context.answerAgency_ref.link}}"
+        "../API/identity/user?p=0&c=100&f=group_id={{groupId[0].id}}"
+      ],
+      "exposed" : false
+    },
+    "groupId" : {
+      "type" : "url",
+      "value" : [
+        "../API/identity/group?p=0&c=1&f=name= attorneys"
       ],
       "exposed" : false
     }
   },
   "assets" : [
     {
-      "id" : "d4dcf78a-cddd-46dc-8fce-afb24408f0c4",
-      "name" : "style.css",
-      "type" : "css",
+      "id" : "6cc60d51-98e1-47cd-a146-8f5597059fa3",
+      "name" : "localization.json",
+      "type" : "json",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "40a1a27f-2c2d-44c1-b0df-5c1b1885ed56",
-      "name" : "localization.json",
-      "type" : "json",
+      "id" : "0ba68e06-3ac4-4767-b308-a6dc540d6668",
+      "name" : "style.css",
+      "type" : "css",
       "order" : 0,
       "external" : false
     }

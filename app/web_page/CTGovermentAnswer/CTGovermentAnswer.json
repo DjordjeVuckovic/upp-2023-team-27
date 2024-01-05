@@ -1,10 +1,10 @@
 {
-  "id" : "CTAgencyApproval",
-  "name" : "CTAgencyApproval",
+  "id" : "CTGovermentAnswer",
+  "name" : "CTGovermentAnswer",
   "type" : "form",
-  "uuid" : "73cb77fd-1bea-454b-9fe0-008eda3c314a",
+  "uuid" : "01435bb2-3a43-4596-b1fa-dd57af692d95",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1704467624107,
+  "lastUpdate" : 1704464896766,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -14,7 +14,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "c0abd7a9-6e0e-42d0-a95b-0376ac033b5c",
+        "reference" : "2c42c367-663d-471c-9169-b5380f70e382",
         "hasValidationError" : false,
         "id" : "pbContainer",
         "rows" : [
@@ -53,7 +53,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "7bcfcba0-5a05-4613-b0d2-d31dd00ac24b",
+              "reference" : "31b0e86d-149d-4d45-9c76-45fd60c37062",
               "hasValidationError" : false,
               "id" : "pbTitle",
               "description" : ""
@@ -101,7 +101,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "b7213004-9881-4e68-be68-e2143630e257",
+              "reference" : "41b9abd2-2703-4572-b110-b0a450bfc720",
               "hasValidationError" : false,
               "id" : "pbText",
               "description" : ""
@@ -126,7 +126,7 @@
             "value" : false
           }
         },
-        "reference" : "42ce1673-9f27-474b-baf6-131b622834b9",
+        "reference" : "4df4a5c9-e4dd-4c7b-a0e8-1fcc17dd3864",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -135,7 +135,7 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "dea70a28-eaa1-44ae-ab89-bd3b09a6b55f",
+          "reference" : "a11e6635-8845-43b4-9d46-224f701f272d",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
@@ -163,7 +163,7 @@
                   },
                   "text" : {
                     "type" : "interpolation",
-                    "value" : "Agency Employee Answer"
+                    "value" : "Why the deadline was breached?"
                   },
                   "level" : {
                     "type" : "constant",
@@ -171,10 +171,10 @@
                   },
                   "alignment" : {
                     "type" : "constant",
-                    "value" : "left"
+                    "value" : "center"
                   }
                 },
-                "reference" : "67b01835-d3e3-4f93-a1c5-2839f762854f",
+                "reference" : "c15f0e10-f13c-4eb7-afe9-967136f49cda",
                 "hasValidationError" : false,
                 "id" : "pbTitle"
               }
@@ -183,57 +183,50 @@
               {
                 "type" : "component",
                 "dimension" : {
-                  "xs" : 12,
-                  "sm" : 12,
                   "md" : 12,
+                  "sm" : 12,
+                  "xs" : 12,
                   "lg" : 12
                 },
                 "propertyValues" : {
-                  "cssClasses" : {
-                    "type" : "constant",
-                    "value" : ""
-                  },
                   "hidden" : {
                     "type" : "constant",
                     "value" : false
                   },
-                  "allowHTML" : {
+                  "level" : {
                     "type" : "constant",
-                    "value" : false
+                    "value" : "Level 4"
                   },
-                  "labelHidden" : {
+                  "cssClasses" : {
                     "type" : "constant",
-                    "value" : true
-                  },
-                  "label" : {
-                    "type" : "interpolation",
-                    "value" : "Default label"
-                  },
-                  "labelPosition" : {
-                    "type" : "constant",
-                    "value" : "top"
-                  },
-                  "labelWidth" : {
-                    "type" : "constant",
-                    "value" : 4
+                    "value" : ""
                   },
                   "text" : {
                     "type" : "interpolation",
-                    "value" : "{{answer.text}}"
+                    "value" : "Your Answer"
                   },
                   "alignment" : {
                     "type" : "constant",
                     "value" : "left"
+                  },
+                  "dimension" : {
+                    "type" : "constant",
+                    "value" : 12
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : false
                   }
                 },
-                "reference" : "314311a4-3c3c-4014-b83c-9c166af89017",
+                "reference" : "f44bd352-ae17-4029-9d35-5ac8f59ce7e6",
                 "hasValidationError" : false,
-                "id" : "pbText"
+                "id" : "pbTitle",
+                "description" : ""
               }
             ],
             [
               {
-                "type" : "component",
+                "type" : "container",
                 "dimension" : {
                   "md" : 12,
                   "sm" : 12,
@@ -241,9 +234,8 @@
                   "lg" : 12
                 },
                 "propertyValues" : {
-                  "labelHidden" : {
-                    "type" : "constant",
-                    "value" : false
+                  "repeatedCollection" : {
+                    "type" : "variable"
                   },
                   "hidden" : {
                     "type" : "constant",
@@ -253,35 +245,106 @@
                     "type" : "constant",
                     "value" : ""
                   },
-                  "disabled" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "label" : {
-                    "type" : "interpolation",
-                    "value" : "Is Approved"
-                  },
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
-                  },
-                  "value" : {
-                    "type" : "variable",
-                    "value" : "formInput.isApproved"
-                  },
-                  "required" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "allowHTML" : {
-                    "type" : "constant",
-                    "value" : false
                   }
                 },
-                "reference" : "d8c26319-f375-4a8a-bc04-cbde06ee581f",
+                "reference" : "30d16f06-3867-4429-b299-88d6866e5d45",
                 "hasValidationError" : false,
-                "id" : "pbCheckbox",
-                "description" : ""
+                "id" : "pbContainer",
+                "rows" : [
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 1
+                        },
+                        "readOnly" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Answer"
+                        },
+                        "placeholder" : {
+                          "type" : "constant"
+                        },
+                        "type" : {
+                          "type" : "constant",
+                          "value" : "text"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "answerGoverment.text"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "debounce" : {
+                          "type" : "constant",
+                          "value" : 0
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
+                        }
+                      },
+                      "reference" : "777de6d6-28f2-4314-a6c8-7b070e8004b9",
+                      "hasValidationError" : false,
+                      "id" : "pbInput",
+                      "description" : ""
+                    }
+                  ]
+                ]
               }
             ],
             [
@@ -359,7 +422,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "2a203572-d0f2-49ae-88d3-17391ace7a20",
+                "reference" : "75b9bd6e-c25c-417c-9172-c28cbdf1ca98",
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
@@ -411,7 +474,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "e0940b17-cfe0-4829-8cb3-b89c329b66d6",
+                "reference" : "7442fbb1-7cb2-4958-a4ed-5b4c7801d4dd",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
@@ -430,12 +493,10 @@
       ],
       "exposed" : false
     },
-    "formInput" : {
-      "type" : "json",
+    "answerGoverment" : {
+      "type" : "url",
       "value" : [
-        "{\r",
-        "  \"isApproved\" : false\r",
-        "}"
+        "../{{context.answerGoverment_ref.link}}"
       ],
       "exposed" : false
     },
@@ -457,8 +518,13 @@
     "formOutput" : {
       "type" : "expression",
       "value" : [
-        "return {",
-        "\tisApproved: $data.formInput.isApproved",
+        "if( $data.answerGoverment ){",
+        "\treturn {",
+        "\t\t//map answerGoverment variable to expected task contract input",
+        "\t\tanswerGovermentInput: {",
+        "\t\t\ttext: $data.answerGoverment.text !== undefined ? $data.answerGoverment.text : null",
+        "\t\t}",
+        "\t}",
         "}"
       ],
       "exposed" : false
@@ -476,27 +542,20 @@
         "id"
       ],
       "exposed" : false
-    },
-    "answer" : {
-      "type" : "url",
-      "value" : [
-        "../{{context.answerAgency_ref.link}}"
-      ],
-      "exposed" : false
     }
   },
   "assets" : [
     {
-      "id" : "d4dcf78a-cddd-46dc-8fce-afb24408f0c4",
-      "name" : "style.css",
-      "type" : "css",
+      "id" : "334156de-0e58-406f-83ee-0da140b5a05f",
+      "name" : "localization.json",
+      "type" : "json",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "40a1a27f-2c2d-44c1-b0df-5c1b1885ed56",
-      "name" : "localization.json",
-      "type" : "json",
+      "id" : "0d03f84e-ab42-424e-89f0-1e9800448729",
+      "name" : "style.css",
+      "type" : "css",
       "order" : 0,
       "external" : false
     }
