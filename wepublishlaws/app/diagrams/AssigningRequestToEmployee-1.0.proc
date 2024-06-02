@@ -68,7 +68,7 @@
               <referencedElements xmi:type="process:Data" xmi:id="_yavd8Ks-Ee6wJsJzyj3tNw" name="userId" dataType="_m1da_5OuEe6gO5wGHuEo1Q"/>
             </leftOperand>
             <rightOperand xmi:type="expression:Expression" xmi:id="_fzlngqs8Ee6wJsJzyj3tNw" name="newScript()" content="import org.bonitasoft.engine.identity.User&#xD;&#xA;import org.bonitasoft.engine.identity.UserCriterion&#xD;&#xA;import org.bonitasoft.engine.bpm.flownode.ActivityInstanceCriterion&#xD;&#xA;&#xD;&#xA;import org.slf4j.Logger;&#xD;&#xA;import org.slf4j.LoggerFactory;&#xD;&#xA;// Get IdentityAPI&#xD;&#xA;def identityAPI = apiAccessor.getIdentityAPI()&#xD;&#xA;def processAPI = apiAccessor.getProcessAPI()&#xD;&#xA;// Get the list of userIDs in the user group&#xD;&#xA;def usersInGroup = identityAPI.getUsersInGroup(&#xD;&#xA;&#x9;identityAPI.getGroupByPath(&quot;/agency/Department/Employees&quot;).id,&#xD;&#xA;&#x9;0,&#xD;&#xA;&#x9;Integer.MAX_VALUE,&#xD;&#xA;&#x9;UserCriterion.FIRST_NAME_ASC&#xD;&#xA;&#x9;)&#xD;&#xA;&#x9;Logger logger = LoggerFactory.getLogger(&quot;org.bonitasoft.groovy.script.my_int_init_script&quot;);&#xD;&#xA;&#x9;logger.debug(&quot;PROCES JE USAO U SCRIPT TASK ********************888888&quot;);&#xD;&#xA;def availableUsers = []&#xD;&#xA;usersInGroup.each { User user ->&#xD;&#xA;&#x9;List&lt;Long> taskIds = processAPI.getAssignedHumanTaskInstances(user.id, 0, 2000, ActivityInstanceCriterion.DEFAULT)&#xD;&#xA;&#x9;if (taskIds.isEmpty()) {&#xD;&#xA;&#x9;&#x9;// If user has no pending tasks, add to available users&#xD;&#xA;&#x9;&#x9;availableUsers.add(user)&#xD;&#xA;&#x9;}&#xD;&#xA;&#x9;}&#xD;&#xA;Long userIdFirst = availableUsers.isEmpty()&#xD;&#xA;? null&#xD;&#xA;: availableUsers.first().id&#xD;&#xA;&#xD;&#xA;return userIdFirst" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Long">
-              <referencedElements xmi:type="expression:Expression" xmi:id="_E5KuwKwIEe6X6ojziS-Osg" name="apiAccessor" content="apiAccessor" type="TYPE_ENGINE_CONSTANT" returnType="org.bonitasoft.engine.api.APIAccessor"/>
+              <referencedElements xmi:type="expression:Expression" xmi:id="_e5V7MLEuEe6ESviNa-uNoQ" name="apiAccessor" content="apiAccessor" type="TYPE_ENGINE_CONSTANT" returnType="org.bonitasoft.engine.api.APIAccessor"/>
             </rightOperand>
             <operator xmi:type="expression:Operator" xmi:id="_fzlng6s8Ee6wJsJzyj3tNw" type="ASSIGNMENT"/>
           </operations>
@@ -83,7 +83,7 @@
         <defaultValue xmi:type="expression:Expression" xmi:id="_whKGIas-Ee6wJsJzyj3tNw" content="" returnType="java.lang.Long"/>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_m1da5JOuEe6gO5wGHuEo1Q">
-        <targetForm xmi:type="expression:Expression" xmi:id="_oldokKwHEe6X6ojziS-Osg" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_kugXwLEuEe6ESviNa-uNoQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_m1da5pOuEe6gO5wGHuEo1Q">
         <targetForm xmi:type="expression:Expression" xmi:id="_m1da55OuEe6gO5wGHuEo1Q" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
@@ -127,7 +127,7 @@
         <condition xmi:type="expression:Expression" xmi:id="_7GW4UqtAEe6wJsJzyj3tNw" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
       <actors xmi:type="process:Actor" xmi:id="_hKeAEJUxEe6yPaB41LqcJQ" name="Agency" initiator="true"/>
-      <configurations xmi:type="configuration:Configuration" xmi:id="_eg8XoJW2Ee67AZRuP5tRmg" name="Production" version="8" username="Ivana Lazarevic">
+      <configurations xmi:type="configuration:Configuration" xmi:id="_eg8XoJW2Ee67AZRuP5tRmg" name="Production" version="8" username="smith123">
         <actorMappings xmi:type="actormapping:ActorMappingsType" xmi:id="_eg8XppW2Ee67AZRuP5tRmg">
           <actorMapping xmi:type="actormapping:ActorMapping" xmi:id="_eg8Xp5W2Ee67AZRuP5tRmg" name="Agency">
             <groups xmi:type="actormapping:Groups" xmi:id="_eg8XqJW2Ee67AZRuP5tRmg">
